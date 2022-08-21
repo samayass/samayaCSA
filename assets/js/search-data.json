@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Title",
-            "content": "# Python Jupyter Notebook &gt; Jupyter Notebook for Python - title: Python Jupyter Notebook - toc: false - categories: [jupyter] print (&quot;Hello World!&quot;) . Hello World! .",
-            "url": "https://samayass.github.io/samayaCSA/2022/08/21/py.html",
-            "relUrl": "/2022/08/21/py.html",
+            "title": "Python Jupyter Notebook",
+            "content": "print (&quot;Hello World!&quot;) . Hello World! .",
+            "url": "https://samayass.github.io/samayaCSA/jupyter/2022/08/21/py.html",
+            "relUrl": "/jupyter/2022/08/21/py.html",
             "date": " • Aug 21, 2022"
         }
         
