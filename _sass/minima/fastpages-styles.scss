@@ -1,6 +1,10 @@
 //Default Overrides For Styles In Minima 
 // If you wish to override any of this CSS, do so in _sass/minima/custom-styles.css
 
+body {
+  background-color: #E8D7F1;
+}
+
 .post img {
         display: block;
         // border:1px solid #021a40;
@@ -153,7 +157,7 @@ h6:hover .anchor-link {
 .page-description {
   margin-top: .5rem !important;
   margin-bottom: .5rem !important;
-  color: #585858;
+  color: #4A306D;
   font-size: 115%;
 }
 
@@ -164,7 +168,7 @@ h6:hover .anchor-link {
   opacity: 35%;
 }
 .category-tags-link {
-  color:rgb(187, 129, 129) !important;
+  color:rgb(161, 103, 165) !important;
   font-size: 13px !important;
 }
 
@@ -173,26 +177,26 @@ h6:hover .anchor-link {
 .search-results-list-item {padding-bottom: 1rem;}
 .search-results-list-item .search-result-title {
   font-size: 16px;
-  color: #d9230f;
+  color: #A167A5;
 }
 .search-result-rel-url {color: silver;}
-.search-results-list-item a {display: block; color: #777;}
+.search-results-list-item a {display: block; color: #4A306D;}
 .search-results-list-item a:hover, .search-results-list-item a:focus {text-decoration: none;}
 .search-results-list-item a:hover .search-result-title {text-decoration: underline;}
 
 .search-result-rel-date {
-  color: rgb(109, 120, 138);
+  color: rgb(74, 48, 109);
   font-size: 14px;
 }
 
 .search-result-preview {
-  color: #777;
+  color: #4A306D;
   font-size: 16px;
   margin-top:.02rem !important;
   margin-bottom:.02rem !important;
 }
 .search-result-highlight {
-  color: #2e0137;
+  color: ##0E273C;
   font-weight:bold;
 }
 
