@@ -80,11 +80,20 @@
 
   
   
+      ,"page0": {
+          "title": "Assignments",
+          "content": "Trimester 1 - Weekly Assignments . Week Assignment Tangible Blog Issue . 1 | Fastpages Bash Primitives | Blog Post With Tangibles | Github Issue, | . 0 | Tools and Equipment | Blog Post With Tangibles | Github Issue, | .",
+          "url": "https://samayass.github.io/samayaCSA/assignments/",
+          "relUrl": "/assignments/",
+          "date": ""
+      }
+      
+  
 
   
       ,"page1": {
-          "title": "College Board Units",
-          "content": "",
+          "title": "College Board",
+          "content": "Trimester 1 - College Board Units .",
           "url": "https://samayass.github.io/samayaCSA/collegeboard/",
           "relUrl": "/collegeboard/",
           "date": ""
@@ -95,7 +104,7 @@
   
       ,"page2": {
           "title": "PBL",
-          "content": "",
+          "content": "Trimester 1 - PBL Assignments .",
           "url": "https://samayass.github.io/samayaCSA/PBL/",
           "relUrl": "/PBL/",
           "date": ""
@@ -104,7 +113,11 @@
   
 
   
-      ,"page3": {
+
+  
+
+  
+      ,"page5": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://samayass.github.io/samayaCSA/about/",
@@ -117,13 +130,8 @@
   
 
   
-  
 
   
-
-  
-  
-
   
 
   
@@ -136,7 +144,10 @@
   
 
   
-      ,"page12": {
+  
+
+  
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://samayass.github.io/samayaCSA/robots.txt",
