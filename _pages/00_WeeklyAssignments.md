@@ -4,7 +4,7 @@ permalink: /assignments/
 title: Assignments
 ---
 ## Trimester 1 - Weekly Assignments
- 
+ <br>
 <table>
     <tr>
      <th>Week</th>
