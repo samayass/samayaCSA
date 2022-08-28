@@ -2,21 +2,21 @@
   
     
         "post0": {
-            "title": "Primitves Jupyter Notebook",
-            "content": "public class Primitives { public static void main(String[] args) { int a = 5; double b = 7.4; boolean c = true; String d = &quot;Hi&quot;; String e = new String (&quot;Hey&quot;); System.out.println(&quot;An Integer: &quot; + a); System.out.println(&quot;A Double: &quot; + b); System.out.println(&quot;A Boolean: &quot; + c); System.out.println(&quot;A String: &quot; + d); System.out.println(&quot;A String Formal: &quot; + e); } } Primitives.main(null) . An Integer: 5 A Double: 7.4 A Boolean: true A String: Hi A String Formal: Hey . import java.util.Scanner; //creating Class public class ConvertTemp { //creating main method public static void main(String[] args){ //ceclaring variables double multiplyNum = 1.8; int addNum = 32; int choice; Scanner scanner = new Scanner(System.in); double number; while(true) { //menu options System.out.println(&quot;Press 1 for conversion to C&quot;); System.out.println(&quot;Press 2 for conversion to F&quot;); System.out.println(&quot;Press 3 to quit&quot;); //ask user for their choice System.out.println(&quot;Make your choice&quot;); choice = scanner.nextInt(); switch (choice) { //convert celsius to farenheit case 1: System.out.println(&quot;Enter number&quot;); number = scanner.nextDouble(); System.out.println(&quot;Number is: &quot; + number); System.out.println(&quot;Celsius to Farenheit:&quot; + ((number * multiplyNum)+addNum)); break; //convert farenheit to celsius case 2: System.out.println(&quot;Enter number&quot;); number = scanner.nextDouble(); System.out.println(&quot;Number is: &quot; + number); System.out.println(&quot;Farenheit to Celsius:&quot; + ((number - addNum) / multiplyNum )); break; //quit the program case 3: System.exit(0); //default case to display the message invalid choice made by the user default: System.out.println(&quot;Invalid choice. Input a valid choice (1,2,3) n n&quot;); } } } } ConvertTemp.main(null) . Press 1 for conversion to C Press 2 for conversion to F Press 3 to quit Make your choice . Enter number . Number is: 24.0 Celsius to Farenheit:75.2 Press 1 for conversion to C Press 2 for conversion to F Press 3 to quit Make your choice . Enter number . Number is: 450.0 Farenheit to Celsius:232.22222222222223 Press 1 for conversion to C Press 2 for conversion to F Press 3 to quit Make your choice .",
-            "url": "https://samayass.github.io/samayaCSA/jupyter/2022/08/26/primitives.html",
-            "relUrl": "/jupyter/2022/08/26/primitives.html",
-            "date": " • Aug 26, 2022"
+            "title": "Title",
+            "content": "",
+            "url": "https://samayass.github.io/samayaCSA/2022/08/27/.html",
+            "relUrl": "/2022/08/27/.html",
+            "date": " • Aug 27, 2022"
         }
         
     
   
     
         ,"post1": {
-            "title": "Title",
-            "content": "",
-            "url": "https://samayass.github.io/samayaCSA/2022/08/26/.html",
-            "relUrl": "/2022/08/26/.html",
+            "title": "Primitves Jupyter Notebook",
+            "content": "public class Primitives { public static void main(String[] args) { int a = 5; double b = 7.4; boolean c = true; String d = &quot;Hi&quot;; String e = new String (&quot;Hey&quot;); System.out.println(&quot;An Integer: &quot; + a); System.out.println(&quot;A Double: &quot; + b); System.out.println(&quot;A Boolean: &quot; + c); System.out.println(&quot;A String: &quot; + d); System.out.println(&quot;A String Formal: &quot; + e); } } Primitives.main(null) . An Integer: 5 A Double: 7.4 A Boolean: true A String: Hi A String Formal: Hey . import java.util.Scanner; //creating Class public class ConvertTemp { //creating main method public static void main(String[] args){ //ceclaring variables double multiplyNum = 1.8; int addNum = 32; int choice; Scanner scanner = new Scanner(System.in); double number; while(true) { //menu options System.out.println(&quot;Press 1 for conversion to C&quot;); System.out.println(&quot;Press 2 for conversion to F&quot;); System.out.println(&quot;Press 3 to quit&quot;); //ask user for their choice System.out.println(&quot;Make your choice&quot;); choice = scanner.nextInt(); switch (choice) { //convert celsius to farenheit case 1: System.out.println(&quot;Enter number&quot;); number = scanner.nextDouble(); System.out.println(&quot;Number is: &quot; + number); System.out.println(&quot;Celsius to Farenheit:&quot; + ((number * multiplyNum)+addNum)); break; //convert farenheit to celsius case 2: System.out.println(&quot;Enter number&quot;); number = scanner.nextDouble(); System.out.println(&quot;Number is: &quot; + number); System.out.println(&quot;Farenheit to Celsius:&quot; + ((number - addNum) / multiplyNum )); break; //quit the program case 3: System.exit(0); //default case to display the message invalid choice made by the user default: System.out.println(&quot;Invalid choice. Input a valid choice (1,2,3) n n&quot;); } } } } ConvertTemp.main(null) . Press 1 for conversion to C Press 2 for conversion to F Press 3 to quit Make your choice . Enter number . Number is: 24.0 Celsius to Farenheit:75.2 Press 1 for conversion to C Press 2 for conversion to F Press 3 to quit Make your choice . Enter number . Number is: 450.0 Farenheit to Celsius:232.22222222222223 Press 1 for conversion to C Press 2 for conversion to F Press 3 to quit Make your choice .",
+            "url": "https://samayass.github.io/samayaCSA/jupyter/2022/08/26/primitives.html",
+            "relUrl": "/jupyter/2022/08/26/primitives.html",
             "date": " • Aug 26, 2022"
         }
         
