@@ -1,35 +1,35 @@
-$high-emph: rgba(white, 0.87);
-$med-emph: rgba(white, 0.69);
-$low-emph: rgba(white, 0.38);
-$dark-grey : #121212; 
+$high-emph: #001B2E;
+$med-emph: #5C7457; //Noicee
+$low-emph: #734B5E;
+$dark-grey : #ADB6C4; 
 // $dark-grey : #1F1B24;
 $overlay: mix($dark-grey, white, 95%);
 $overlay-light: mix($dark-grey, white, 86%);
 
 html, body, input, textarea, select, button {   
   color: $high-emph !important;
-  background-color: #ADB6C4 !important;
+  background-color: $dark-grey !important;
 }
 
 a {
-    color: #5C7457 !important;
+    color: #734B5E !important;
 }
 
 a:hover {
-    color:#001b2e !important;
+    color:$high-emph !important;
 }
 
 .site-title, .site-title:visited, .site-nav, .page-link {
-    color: #001b2e !important;
+    color: $high-emph !important;
 }
 
 .site-nav {
-    background-color: #ADB6C4;
-    border-color: #001b2e;
+    background-color: $dark-grey;
+    border-color: $overlay-light;
 }
 
 * {
-    scrollbar-color: #001b2e;
+    scrollbar-color: $dark-grey $overlay-light;
 }
 
 pre, code {
@@ -39,15 +39,15 @@ pre, code {
 }
 
 .page-description {
-    color: #734B5E;
+    color: $med-emph;
 }
 
 .post-meta {
-    color: #5C7457;
+    color: $low-emph;
 }
 
 .post-content p, .post-content li {
-    color: #734B5E;
+    color: $med-emph;
 }
 
 .btn {
@@ -57,23 +57,23 @@ pre, code {
 }
 
 .btn:hover {
-    background-color: #5C7457 !important;
+    background-color: $dark-grey !important;
 }
 
 table th{
     background-color: $overlay;
     border-color: $overlay-light;
-    color: #734B5E;
+    color: $high-emph;
 }
 
 table td{
-    background-color: #001b2e;
+    background-color: $dark-grey;
     border-color: $overlay-light;
-    color: #5C7457;
+    color: $med-emph;
 }
 
 .flash {
-    color: #001b2e !important;
+    color: $dark-grey !important;
     filter: brightness(80%);
 }
 
@@ -88,5 +88,5 @@ canvas {
 }
 
 li .post-meta-description {
-    color: #5C7457 !important;
+    color: $med-emph !important;
 }

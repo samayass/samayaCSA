@@ -18,7 +18,7 @@ img.emoji{
   text-align: center;
   font-size: .8rem;
   font-style: italic;
-  color: light-grey;
+  color: #734B5E;
 }
 
 .page-content {
@@ -57,7 +57,8 @@ p {
 
 h1, h2, h3, h4 {
     font-weight: normal !important;
-    margin-bottom:0.5rem !important;  
+    margin-bottom:0.5rem !important; 
+    color: #734B5E 
     code {
       font-size: 100%;
     }
@@ -164,7 +165,7 @@ h6:hover .anchor-link {
   opacity: 35%;
 }
 .category-tags-link {
-  color:rgb(187, 129, 129) !important;
+  color:#732C2C !important;
   font-size: 13px !important;
 }
 
@@ -173,7 +174,7 @@ h6:hover .anchor-link {
 .search-results-list-item {padding-bottom: 1rem;}
 .search-results-list-item .search-result-title {
   font-size: 16px;
-  color: #d9230f;
+  color: #732C2C;
 }
 .search-result-rel-url {color: silver;}
 .search-results-list-item a {display: block; color: #777;}
@@ -181,18 +182,18 @@ h6:hover .anchor-link {
 .search-results-list-item a:hover .search-result-title {text-decoration: underline;}
 
 .search-result-rel-date {
-  color: rgb(109, 120, 138);
+  color: #734B5E;
   font-size: 14px;
 }
 
 .search-result-preview {
-  color: #777;
+  color: #001B2E;
   font-size: 16px;
   margin-top:.02rem !important;
   margin-bottom:.02rem !important;
 }
 .search-result-highlight {
-  color: #2e0137;
+  color: #732C2C;
   font-weight:bold;
 }
 
