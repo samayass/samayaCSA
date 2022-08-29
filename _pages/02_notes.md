@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /PBL/
-title: PBL
+permalink: /notes/
+title: Notes
 ---
 ## Trimester 1 - Notes
