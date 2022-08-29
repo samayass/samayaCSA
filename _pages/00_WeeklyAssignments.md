@@ -18,7 +18,7 @@ title: Assignments
         <td><a href="https://nighthawkcoders.github.io/APCSA/techtalk/fastpages">Fastpages</a>,
             <a href="https://nighthawkcoders.github.io/APCSA/techtalk/bash">Bash</a>,
             <a href="https://nighthawkcoders.github.io/APCSA/unit/1">Primitives</a></td>
-        <td><a href="{{site.baseurl}}">Blog Post With Tangibles</a></td>
+        <td><a href="{{site.baseurl}}/markdown/2022/08/28/week1.html">Blog Post With Tangibles</a></td>
         <td><a href="https://github.com/samayass/samayaCSA/issues/2">Github Issue</a></td>
         
     </tr>
