@@ -7,6 +7,10 @@ comments: true
 title: Unit 1 Takeaways
 ---
 
+## Unit 1 Completetion
+<img width="451" alt="code org" src="https://user-images.githubusercontent.com/89225474/188527015-3aaa113f-c2ee-4ba3-a1dc-99c9218531a5.png">
+
+
 ## Where is a Class defined?
 A class is defined when a group of variables, objects and methods need to be added. All these can be different data types.
 
