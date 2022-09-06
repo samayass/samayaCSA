@@ -14,6 +14,14 @@ title: Assignments
     </tr>
 
     <tr>
+        <td>2</td>
+        <td><a href="https://nighthawkcoders.github.io/APCSA/unit/2">Using Objects</a></td>
+        <td><a href="{{site.baseurl}}/markdown/2022/09/05/week2.html">Blog Post With Tangibles</a></td>
+        <td><a href="https://github.com/samayass/samayaCSA/issues/4">Github Issue</a></td>
+        
+    </tr>
+
+    <tr>
         <td>1</td>
         <td><a href="https://nighthawkcoders.github.io/APCSA/techtalk/fastpages">Fastpages</a>,
             <a href="https://nighthawkcoders.github.io/APCSA/techtalk/bash">Bash</a>,
