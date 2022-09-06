@@ -18,7 +18,8 @@ title: College Board
         <td><a href="https://nighthawkcoders.github.io/APCSA/unit/2">Objects</a></td>
         <td><a href="{{site.baseurl}}/jupyter/2022/09/05/features.html">Objects Jupyter Notebook</a></td>
         <td><a href="{{site.baseurl}}/markdown/2022/09/05/unit1-code-org.html">Unit 1 Takeaways</a></td>
-
+    </tr>
+    <tr>
         <td>1</td>
         <td><a href="https://nighthawkcoders.github.io/APCSA/unit/1">Primitives</a></td>
         <td><a href="{{site.baseurl}}/jupyter/2022/08/26/primitives.html">Primitives Jupyter Notebook</a></td>
