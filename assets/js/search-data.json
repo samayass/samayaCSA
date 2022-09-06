@@ -13,10 +13,10 @@
   
     
         ,"post1": {
-            "title": "Title",
+            "title": "Features Menu Jupyter Notebook",
             "content": "import java.util.Scanner; public class GCD { public static void main(String[] args) { Scanner input = new Scanner(System.in); System.out.println(&quot;Enter the two numbers: &quot;); int a = input.nextInt(); int b = input.nextInt(); System.out.println(&quot;The two numbers are: &quot; + a + &quot; and &quot; + b); System.out.println(&quot;The GCD of two numbers is: &quot; + gcd(a, b)); } // Eucid algorithm public static int gcd(int a,int b) { if(b==0) return a; else return gcd(b,a%b); } } GCD.main(null) . Enter the two numbers: The two numbers are: 5 and 30 The GCD of two numbers is: 5 . import java.util.Scanner; public class LCM { public static void main(String[] args) { Scanner input = new Scanner(System.in); System.out.println(&quot;Enter the two numbers: &quot;); int a = input.nextInt(); int b = input.nextInt(); System.out.println(&quot;The two numbers are: &quot; + a + &quot; and &quot; + b); System.out.println(&quot;The LCM of two numbers is: &quot; + lcm(a, b)); } public static int gcd(int a,int b) { if(b==0) return a; else return gcd(b,a%b); } public static int lcm(int a,int b) { return a*b/(gcd(a,b)); } } LCM.main(null) . Enter the two numbers: The two numbers are: 6 and 10 The LCM of two numbers is: 30 . class GFG { // Function to print the fibonacci series static int fibonacci(int n) { // Base Case if (n &lt;= 1) return n; // Recursive call return fibonacci(n - 1) + fibonacci(n - 2); } // Driver Code public static void main(String args[]) { Scanner input = new Scanner(System.in); System.out.println(&quot;Enter a number: &quot;); int N = input.nextInt(); System.out.println(&quot;The number is: &quot; + N); for (int i = 0; i &lt; N; i++) { System.out.print(fibonacci(i) + &quot; &quot;); } } } GFG.main(null) . Enter a number: The number is: 9 0 1 1 2 3 5 8 13 21 .",
-            "url": "https://samayass.github.io/samayaCSA/2022/09/05/features.html",
-            "relUrl": "/2022/09/05/features.html",
+            "url": "https://samayass.github.io/samayaCSA/jupyter/2022/09/05/features.html",
+            "relUrl": "/jupyter/2022/09/05/features.html",
             "date": " • Sep 5, 2022"
         }
         
@@ -148,7 +148,7 @@
   
       ,"page0": {
           "title": "Assignments",
-          "content": "Trimester 1 - Weekly Assignments . . Week Assignment Tangible Blog Issues . 1 | Fastpages, Bash, Primitives | Blog Post With Tangibles | Github Issue | . 0 | Tools and Equipment | Blog Post With Tangibles | Github Issue | .",
+          "content": "Trimester 1 - Weekly Assignments . . Week Assignment Tangible Blog Issues . 2 | Using Objects | Blog Post With Tangibles | Github Issue | . 1 | Fastpages, Bash, Primitives | Blog Post With Tangibles | Github Issue | . 0 | Tools and Equipment | Blog Post With Tangibles | Github Issue | .",
           "url": "https://samayass.github.io/samayaCSA/assignments/",
           "relUrl": "/assignments/",
           "date": ""
@@ -159,7 +159,7 @@
   
       ,"page1": {
           "title": "College Board",
-          "content": "Trimester 1 - College Board Units . . Unit Assignment Jupyter Notebook Code.org Lessons . 1 | Primitives | Primitives Jupyter Notebook | | .",
+          "content": "Trimester 1 - College Board Units . . Unit Assignment Jupyter Notebook Code.org Lessons . 2 | Objects | Objects Jupyter Notebook | Unit 1 Takeaways | 1 | Primitives | Primitives Jupyter Notebook | | .",
           "url": "https://samayass.github.io/samayaCSA/collegeboard/",
           "relUrl": "/collegeboard/",
           "date": ""
