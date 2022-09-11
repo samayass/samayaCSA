@@ -7,6 +7,10 @@ comments: true
 title: Unit 1 Takeaways
 ---
 
+## Unit 1 Completetion
+<img width="451" alt="code org" src="https://user-images.githubusercontent.com/89225474/188527015-3aaa113f-c2ee-4ba3-a1dc-99c9218531a5.png">
+
+
 ## Where is a Class defined?
 A class is defined when a group of variables, objects and methods need to be added. All these can be different data types.
 
@@ -49,3 +53,5 @@ public Subclass() {
 ## Describe Console, GUI differences, or Code.org differences
 
 Making a menu in the console does not require the same design elements that GUI needs, like icons. GUI has a friendly output for someone who is expecting more user-friendly graphics. The console is more powerful, but it not as animated as the GUI. Code.org is extremely graphics oriented to engage the user, and to help them understand concepts through a bigger picture. Also console seems easier for user input for the menu.   
+
+}
