@@ -35,6 +35,15 @@ title: Psychology and the Good Life
 - Do not prioritize material things instead work for knowledge
 - Be careful about time management
 
-## Gratitude Note
+## Gratitude List
+- My health
+- My family
+- My dog
+- My friends
+- My knowledge
 
+## Gratitude Note
+I am grateful for my AP Calc teacher from last year Mrs. Nydam, as she always pushed me to try my hardest and focus on what was important: the understanding of the answer not just the answer. I am glad that she was my teacher for two trimesters, and without her I feel like would not be prepared for the AP test, as well as the enviornments of all my classes like this one. 
+
+I am grateful for my dad because he has helped me various times even when he did not know how to do them. He always makes sure that I am happy and will always be there regardless. I remember when he stayed up till 2 am with me last year when I had to figure out how to deploy with raspberry pi and he did not have to do that, but he did. 
 
