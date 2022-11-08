@@ -33,7 +33,7 @@ title: College Board
     </tr>
     <tr>
         <td>Arrays</td>
-        <td><a href="{{site.baseurl}}/jupyter/2022/10/20/classes.html">Jupyter Notebook</a></td>
+        <td><a href="{{site.baseurl}}/jupyter/2022/10/25/arrays.html">Jupyter Notebook</a></td>
     </tr>
 
 </table>
