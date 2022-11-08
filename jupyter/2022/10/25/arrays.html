@@ -134,8 +134,7 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Array Syntax</p>
-<ul>
+<h2 id="Array-Syntax">Array Syntax<a class="anchor-link" href="#Array-Syntax"> </a></h2><ul>
 <li>int [] array = new int[10];</li>
 <li>int [] array2 = {10,9,8,7,6,5,4,3,2,1};
 Bound Errors</li>
@@ -169,45 +168,76 @@ Traverse an Array</li>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">public</span> <span class="k">class</span> <span class="nc">Array</span> <span class="p">{</span>
-    <span class="n">private</span> <span class="nb">int</span><span class="p">[]</span> <span class="n">values</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">};</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Array</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">values</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">};</span>
 
-    <span class="n">public</span> <span class="n">void</span> <span class="n">printElements</span><span class="p">(){</span>
-        <span class="k">for</span><span class="p">(</span><span class="nb">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">values</span><span class="o">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-            <span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">printElements</span><span class="p">(){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">values</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">values</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="n">public</span> <span class="n">void</span> <span class="n">swapElements</span><span class="p">(){</span>
-        <span class="nb">int</span> <span class="n">lastElement</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="n">values</span><span class="o">.</span><span class="n">length</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
-        <span class="n">values</span><span class="p">[</span><span class="n">values</span><span class="o">.</span><span class="n">length</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-        <span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">lastElement</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">swapElements</span><span class="p">(){</span>
+        <span class="kt">int</span> <span class="n">lastElement</span> <span class="o">=</span> <span class="n">values</span><span class="o">[</span><span class="n">values</span><span class="p">.</span><span class="na">length</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span><span class="p">;</span>
+        <span class="n">values</span><span class="o">[</span><span class="n">values</span><span class="p">.</span><span class="na">length</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">values</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+        <span class="n">values</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="n">lastElement</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="n">public</span> <span class="n">void</span> <span class="n">replaceAllZero</span><span class="p">(){</span>
-        <span class="k">for</span><span class="p">(</span><span class="nb">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">values</span><span class="o">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-            <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">replaceAllZero</span><span class="p">(){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">values</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="n">values</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="n">public</span> <span class="n">static</span> <span class="n">void</span> <span class="n">main</span><span class="p">(</span><span class="n">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">){</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
         
-        <span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">&quot;First and Last Element Swap: &quot;</span><span class="p">);</span>
-        <span class="n">ArrayMethods</span> <span class="n">swapElements</span> <span class="o">=</span> <span class="n">new</span> <span class="n">ArrayMethods</span><span class="p">();</span>
-        <span class="n">swapElements</span><span class="o">.</span><span class="n">swapElements</span><span class="p">();</span>
-        <span class="n">swapElements</span><span class="o">.</span><span class="n">printElements</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;First and Last Element Swap: &quot;</span><span class="p">);</span>
+        <span class="n">Array</span> <span class="n">swapElements</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Array</span><span class="p">();</span>
+        <span class="n">swapElements</span><span class="p">.</span><span class="na">swapElements</span><span class="p">();</span>
+        <span class="n">swapElements</span><span class="p">.</span><span class="na">printElements</span><span class="p">();</span>
 
-        <span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">&quot;Replacing All Elements w/ Zero: &quot;</span><span class="p">);</span>
-        <span class="n">ArrayMethods</span> <span class="n">replaceAllZero</span> <span class="o">=</span> <span class="n">new</span> <span class="n">ArrayMethods</span><span class="p">();</span>
-        <span class="n">swapElements</span><span class="o">.</span><span class="n">replaceAllZero</span><span class="p">();</span>
-        <span class="n">swapElements</span><span class="o">.</span><span class="n">printElements</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Replacing All Elements w/ Zero: &quot;</span><span class="p">);</span>
+        <span class="n">Array</span> <span class="n">replaceAllZero</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Array</span><span class="p">();</span>
+        <span class="n">swapElements</span><span class="p">.</span><span class="na">replaceAllZero</span><span class="p">();</span>
+        <span class="n">swapElements</span><span class="p">.</span><span class="na">printElements</span><span class="p">();</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="n">ArrayMethods</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="n">null</span><span class="p">);</span>
+<span class="n">Array</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>First and Last Element Swap: 
+8
+2
+3
+4
+5
+6
+7
+1
+Replacing All Elements w/ Zero: 
+0
+0
+0
+0
+0
+0
+0
+0
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
