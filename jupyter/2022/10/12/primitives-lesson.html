@@ -65,7 +65,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/samayaCSA/assignments/">Assignments</a><a class="page-link" href="/samayaCSA/collegeboard/">College Board</a><a class="page-link" href="/samayaCSA/notes/">Notes</a><a class="page-link" href="/samayaCSA/PBL/">PBL</a><a class="page-link" href="/samayaCSA/search/">Search</a><a class="page-link" href="/samayaCSA/categories/">Tags</a><a class="page-link" href="/samayaCSA/about/">About Me</a></div>
+        <div class="trigger"><a class="page-link" href="/samayaCSA/collegeboard/">College Board</a><a class="page-link" href="/samayaCSA/notes/">Notes</a><a class="page-link" href="/samayaCSA/PBL/">PBL</a><a class="page-link" href="/samayaCSA/search/">Search</a><a class="page-link" href="/samayaCSA/categories/">Tags</a><a class="page-link" href="/samayaCSA/about/">About Me</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -152,10 +152,96 @@ window.onload = wrap_img;
 <li>(%) finds the remainder</li>
 <li>example: x += 7 increases the varaible by 7</li>
 </ul>
+<h2 id="Vocab">Vocab<a class="anchor-link" href="#Vocab"> </a></h2><h3 id="Casting-for-Division">Casting for Division<a class="anchor-link" href="#Casting-for-Division"> </a></h3><ul>
+<li>When dividing a double by a double the output is a double, and when dividing an integer with an integer the output is an integer, but that is not always the case. like 7/3 is not an integer. To fix this you need to cast the denominator to a double like 7/(double)3</li>
+</ul>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">7</span><span class="o">/</span><span class="mi">3</span><span class="p">;</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+
+<span class="c1">// vs casting with double</span>
+<span class="kt">double</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">7</span><span class="o">/</span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="mi">3</span><span class="p">;</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">y</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2.0
+2.3333333333333335
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Casting,-specifically-for-Truncating-or-Rounding">Casting, specifically for Truncating or Rounding<a class="anchor-link" href="#Casting,-specifically-for-Truncating-or-Rounding"> </a></h3><ul>
+<li>When rounding double values they can be rounded to the nearest integer by adding or subtracting 0.5 and casting with (int)</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">double</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">7.0</span> <span class="o">/</span> <span class="mi">3</span><span class="p">;</span>
+     <span class="kt">int</span> <span class="n">rounded</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">number</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">);</span>
+     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;7.0/3 = &quot;</span> <span class="o">+</span> <span class="n">number</span><span class="p">);</span>
+     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;7/3 truncated: &quot;</span> <span class="o">+</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">number</span> <span class="p">);</span>
+     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;7.0/3 rounded to nearest int: &quot;</span> <span class="o">+</span> <span class="n">rounded</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>7.0/3 = 1.6666666666666667
+7/3 truncated: 1
+7.0/3 rounded to nearest int: 2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="HW">HW<a class="anchor-link" href="#HW"> </a></h1><blockquote><p><a href="https://secure-media.collegeboard.org/apc/_ap06_frq_computer_sc_51649.pdf">2006 FRQ</a></p>
@@ -172,7 +258,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">public</span> <span class="n">double</span> <span class="n">purchasePrice</span><span class="p">()</span> <span class="p">{</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kt">double</span> <span class="nf">purchasePrice</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">return</span> <span class="n">getListPrice</span><span class="p">()</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">taxRate</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
@@ -197,11 +283,11 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">public</span> <span class="nb">int</span> <span class="n">compareCustomer</span><span class="p">(</span><span class="n">Customer</span> <span class="n">other</span><span class="p">)</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kt">int</span> <span class="nf">compareCustomer</span><span class="p">(</span><span class="n">Customer</span> <span class="n">other</span><span class="p">)</span>
   <span class="p">{</span>
-    <span class="nb">int</span> <span class="n">compare</span> <span class="o">=</span>  <span class="n">getName</span><span class="p">()</span><span class="o">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">other</span><span class="o">.</span><span class="n">getName</span><span class="p">());</span>
+    <span class="kt">int</span> <span class="n">compare</span> <span class="o">=</span>  <span class="n">getName</span><span class="p">().</span><span class="na">compareTo</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="na">getName</span><span class="p">());</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">compare</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="n">getID</span><span class="p">()</span> <span class="o">-</span> <span class="n">other</span><span class="o">.</span><span class="n">getID</span><span class="p">();</span>
+      <span class="k">return</span> <span class="n">getID</span><span class="p">()</span> <span class="o">-</span> <span class="n">other</span><span class="p">.</span><span class="na">getID</span><span class="p">();</span>
     <span class="p">}</span>
     <span class="k">else</span> <span class="p">{</span>
       <span class="k">return</span> <span class="n">compare</span><span class="p">;</span>

@@ -80,7 +80,7 @@
     
         ,"post7": {
             "title": "Primitives Student Lesson",
-            "content": "Primitives . primitives are lowercase | nonprimitives are uppercase | Collegeboard need-to-know primitives: Boolean, Int, Double | . Casting . changing a variable from one data type to another | widening: happens automatically, going from smaller to larger data type | narrowing: need to declare to address overflow error, going from larger to smaller data type | . Operators . (+) is addition | (-) is subtraction | (/) is division | (*) is multiplication | (%) finds the remainder | example: x += 7 increases the varaible by 7 | . HW . 2006 FRQ . 2a . public double purchasePrice() { return getListPrice() * (1+taxRate); } . 3a . public int compareCustomer(Customer other) { int compare = getName().compareTo(other.getName()); if (compare == 0) { return getID() - other.getID(); } else { return compare; } } .",
+            "content": "Primitives . primitives are lowercase | nonprimitives are uppercase | Collegeboard need-to-know primitives: Boolean, Int, Double | . Casting . changing a variable from one data type to another | widening: happens automatically, going from smaller to larger data type | narrowing: need to declare to address overflow error, going from larger to smaller data type | . Operators . (+) is addition | (-) is subtraction | (/) is division | (*) is multiplication | (%) finds the remainder | example: x += 7 increases the varaible by 7 | . Vocab . Casting for Division . When dividing a double by a double the output is a double, and when dividing an integer with an integer the output is an integer, but that is not always the case. like 7/3 is not an integer. To fix this you need to cast the denominator to a double like 7/(double)3 | . int x = 7/3; System.out.println(x); // vs casting with double double y = 7/(double)3; System.out.println(y); . 2.0 2.3333333333333335 . Casting, specifically for Truncating or Rounding . When rounding double values they can be rounded to the nearest integer by adding or subtracting 0.5 and casting with (int) | . double x = 7.0 / 3; int rounded = (int)(number + 0.5); System.out.println(&quot;7.0/3 = &quot; + number); System.out.println(&quot;7/3 truncated: &quot; + (int)number ); System.out.println(&quot;7.0/3 rounded to nearest int: &quot; + rounded); . 7.0/3 = 1.6666666666666667 7/3 truncated: 1 7.0/3 rounded to nearest int: 2 . HW . 2006 FRQ . 2a . public double purchasePrice() { return getListPrice() * (1+taxRate); } . 3a . public int compareCustomer(Customer other) { int compare = getName().compareTo(other.getName()); if (compare == 0) { return getID() - other.getID(); } else { return compare; } } .",
             "url": "https://samayass.github.io/samayaCSA/jupyter/2022/10/12/primitives-lesson.html",
             "relUrl": "/jupyter/2022/10/12/primitives-lesson.html",
             "date": " • Oct 12, 2022"
@@ -378,17 +378,6 @@
   
   
       ,"page0": {
-          "title": "Assignments",
-          "content": "Trimester 1 - Weekly Assignments . . Week Assignment Tangible Blog Issues . 2 | Using Objects | Blog Post With Tangibles | Github Issue | . 1 | Fastpages, Bash, Primitives | Blog Post With Tangibles | Github Issue | . 0 | Tools and Equipment | Blog Post With Tangibles | Github Issue | .",
-          "url": "https://samayass.github.io/samayaCSA/assignments/",
-          "relUrl": "/assignments/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page1": {
           "title": "College Board",
           "content": "Trimester 1 - College Board Units . . Unit Notes/Hw . Primitive Types | Jupyter Notebook | . Using Objects | Jupyter Notebook | . Boolean Expressions and if Statements | Jupyter Notebook | . Iteration | Jupyter Notebook | . Writing Classes | Jupyter Notebook | . Arrays | Jupyter Notebook | . Trimester 1 Reflection . Overall . From this trimester my main takeaways are about java and object oriented programming. I feel like I have a basic understanding of the main components like objects, methods and constructors, but to enhance that knowledge I want to ensure that I fully understand these topics before I take the AP test. Another thing that I felt like I imporved on or learned was deployment. Last year when I was deployment manager I felt like I did not understand what I was doing but having to deploy multiple times this trimester and making the poster on deployment helped me understand the idea. PBL also helped me improve on my teamwork because my team and I would meet up after school to help each other. I think this made us more helpful in general and allows us to understand each others ideas better. .",
           "url": "https://samayass.github.io/samayaCSA/collegeboard/",
@@ -399,9 +388,9 @@
   
 
   
-      ,"page2": {
+      ,"page1": {
           "title": "Notes",
-          "content": "Trimester 1 - Notes .",
+          "content": "Notes . Unit Notes .",
           "url": "https://samayass.github.io/samayaCSA/notes/",
           "relUrl": "/notes/",
           "date": ""
@@ -410,7 +399,7 @@
   
 
   
-      ,"page3": {
+      ,"page2": {
           "title": "PBL",
           "content": "Trimester 1 - PBL Assignments .",
           "url": "https://samayass.github.io/samayaCSA/PBL/",
@@ -425,7 +414,7 @@
   
 
   
-      ,"page6": {
+      ,"page5": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://samayass.github.io/samayaCSA/about/",
@@ -462,7 +451,7 @@
   
 
   
-      ,"page17": {
+      ,"page16": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://samayass.github.io/samayaCSA/robots.txt",
