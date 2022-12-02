@@ -40,7 +40,7 @@ baseurl: "/samayaCSA" # the subpath of your site, e.g. "/blog".
 minima:
  social_links:
     - { platform: github, user_url: "https://github.com/samayass" }
-    - { platform: twitter, user_url: "https://twitter.com/samayass" }
+    - { platform: twitter, user_url: "https://twitter.com/" }
 
 # Set this to true to get LaTeX math equation support
 use_math: 
