@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      10 min read
     
 </span></p>
 
@@ -177,6 +177,15 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Key-Words">Key Words </a></li>
 <li class="toc-entry toc-h3"><a href="#Scope-and-Access">Scope and Access </a></li>
 <li class="toc-entry toc-h3"><a href="#Public,-Private,-Protected">Public, Private, Protected </a></li>
+<li class="toc-entry toc-h3"><a href="#Inheritance,-extends">Inheritance, extends </a></li>
+<li class="toc-entry toc-h3"><a href="#Subclass-constructor,-super-Keyword2">Subclass constructor, super Keyword2 </a></li>
+<li class="toc-entry toc-h3"><a href="#Overloading-a-method,-same-name-different-parameters">Overloading a method, same name different parameters </a></li>
+<li class="toc-entry toc-h3"><a href="#Overriding-a-method,-same-signature-of-a-method">Overriding a method, same signature of a method </a></li>
+<li class="toc-entry toc-h3"><a href="#Abstract-Class,-Abstract-Method">Abstract Class, Abstract Method </a></li>
+<li class="toc-entry toc-h3"><a href="#Standard-methods:-toString(),-equals(),-hashCode()">Standard methods: toString(), equals(), hashCode() </a></li>
+<li class="toc-entry toc-h3"><a href="#Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();">Late binding of object, referencing superclass object, ie Animal a = new Chicken(); Animal b = new Goat(); </a></li>
+<li class="toc-entry toc-h3"><a href="#Polymorphism:-any-of-overloading,-overriding,-late-binding">Polymorphism: any of overloading, overriding, late binding </a></li>
+<li class="toc-entry toc-h3"><a href="#Big-O-notation-for-Hash-map,-Binary-Search,-Single-loop,-Nested-Loop">Big O notation for Hash map, Binary Search, Single loop, Nested Loop </a></li>
 </ul>
 </li>
 </ul><!--
@@ -1013,6 +1022,79 @@ is the light on? false
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Inheritance,-extends">
+<a class="anchor" href="#Inheritance,-extends" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inheritance, extends<a class="anchor-link" href="#Inheritance,-extends"> </a>
+</h3>
+<ul>
+<li>Inheritance is a way for attributes and methods to be inherited from one class to another</li>
+<li>Extends is what allows you to bring those attributes from one class to another</li>
+<li>example: <a href="https://samayass.github.io/samayaCSA/jupyter/2022/09/24/fibonacci.html">fibonacci</a>
+</li>
+</ul>
+<h3 id="Subclass-constructor,-super-Keyword2">
+<a class="anchor" href="#Subclass-constructor,-super-Keyword2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Subclass constructor, super Keyword2<a class="anchor-link" href="#Subclass-constructor,-super-Keyword2"> </a>
+</h3>
+<ul>
+<li>A subclass inherits all the members from the superclass while the constructor of the superclass can be invoked from the subclass</li>
+<li>Super keyword refers to superclass objects; it is used to call superclass methods and to access the superclass costructor</li>
+</ul>
+<h3 id="Overloading-a-method,-same-name-different-parameters">
+<a class="anchor" href="#Overloading-a-method,-same-name-different-parameters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overloading a method, same name different parameters<a class="anchor-link" href="#Overloading-a-method,-same-name-different-parameters"> </a>
+</h3>
+<ul>
+<li>Overloading a method in java is a feature that allows a class to have more than one method with the same name, but with different parameters</li>
+<li>Instead of defining two methods that do the same thing, it is better to overload one</li>
+</ul>
+<h3 id="Overriding-a-method,-same-signature-of-a-method">
+<a class="anchor" href="#Overriding-a-method,-same-signature-of-a-method" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overriding a method, same signature of a method<a class="anchor-link" href="#Overriding-a-method,-same-signature-of-a-method"> </a>
+</h3>
+<ul>
+<li>Method overriding occurs when a subclass has the same method as the parent class</li>
+<li>When a subclass provides a particular implementation of a method declared by one of its parent classes</li>
+</ul>
+<h3 id="Abstract-Class,-Abstract-Method">
+<a class="anchor" href="#Abstract-Class,-Abstract-Method" aria-hidden="true"><span class="octicon octicon-link"></span></a>Abstract Class, Abstract Method<a class="anchor-link" href="#Abstract-Class,-Abstract-Method"> </a>
+</h3>
+<ul>
+<li>A abstract class cannot be instantiated but they can be subclassed</li>
+<li>An abstract method is a method that has just the method definition but does not contain implementation</li>
+</ul>
+<h3 id="Standard-methods:-toString(),-equals(),-hashCode()">
+<a class="anchor" href="#Standard-methods:-toString(),-equals(),-hashCode()" aria-hidden="true"><span class="octicon octicon-link"></span></a>Standard methods: toString(), equals(), hashCode()<a class="anchor-link" href="#Standard-methods:-toString(),-equals(),-hashCode()"> </a>
+</h3>
+<ul>
+<li>Standard methods are blocks of code that can be called from another location in the program or class</li>
+<li>toString(); returns the given value in string format</li>
+<li>equals(); compares two strings and returns true if the strings are equal</li>
+<li>hashCode(); returns an integer value generated by a hashing algorithm </li>
+</ul>
+<h3 id="Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();">
+<a class="anchor" href="#Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();" aria-hidden="true"><span class="octicon octicon-link"></span></a>Late binding of object, referencing superclass object, ie Animal a = new Chicken(); Animal b = new Goat();<a class="anchor-link" href="#Late-binding-of-object,-referencing-superclass-object,-ie-Animal-a-=-new-Chicken();-Animal-b-=-new-Goat();"> </a>
+</h3>
+<ul>
+<li>Late binding is when the compiler should perform no argument checks, no type checks on a method call and should leave it all to the runtime</li>
+</ul>
+<h3 id="Polymorphism:-any-of-overloading,-overriding,-late-binding">
+<a class="anchor" href="#Polymorphism:-any-of-overloading,-overriding,-late-binding" aria-hidden="true"><span class="octicon octicon-link"></span></a>Polymorphism: any of overloading, overriding, late binding<a class="anchor-link" href="#Polymorphism:-any-of-overloading,-overriding,-late-binding"> </a>
+</h3>
+<ul>
+<li>Polymorphism is the ability of a class to provide different implementations of a method depending on the type of object that is passed to the method</li>
+<li>Allows us to perform the same action in many different ways</li>
+</ul>
+<h3 id="Big-O-notation-for-Hash-map,-Binary-Search,-Single-loop,-Nested-Loop">
+<a class="anchor" href="#Big-O-notation-for-Hash-map,-Binary-Search,-Single-loop,-Nested-Loop" aria-hidden="true"><span class="octicon octicon-link"></span></a>Big O notation for Hash map, Binary Search, Single loop, Nested Loop<a class="anchor-link" href="#Big-O-notation-for-Hash-map,-Binary-Search,-Single-loop,-Nested-Loop"> </a>
+</h3>
+<ul>
+<li>Big O notation describes the set of all algorithms that run no worse than a certain speed, no better than a certain speed, and at a certain speed</li>
+<li>Shows the number of operations it will perform</li>
+</ul>
+
+</div>
+</div>
+</div>
 </div>
 
 
