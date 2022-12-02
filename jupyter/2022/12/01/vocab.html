@@ -146,9 +146,10 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h3"><a href="#Boolean-Expressions">Boolean Expressions </a></li>
 <li class="toc-entry toc-h3"><a href="#Logic-Gates">Logic Gates </a></li>
-<li class="toc-entry toc-h3"><a href="#Compound-Boolean-Expression---Unit-3">Compound Boolean Expression - Unit 3 </a></li>
+<li class="toc-entry toc-h3"><a href="#Compound-Boolean-Expression">Compound Boolean Expression </a></li>
 <li class="toc-entry toc-h3"><a href="#Truth-Tables">Truth Tables </a></li>
 <li class="toc-entry toc-h3"><a href="#De-Morgan’s-Law">De Morgan’s Law </a></li>
+<li class="toc-entry toc-h3"><a href="#Compare-methods">Compare methods </a></li>
 </ul>
 </li>
 </ul><!--
@@ -490,8 +491,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Compound-Boolean-Expression---Unit-3">
-<a class="anchor" href="#Compound-Boolean-Expression---Unit-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compound Boolean Expression - Unit 3<a class="anchor-link" href="#Compound-Boolean-Expression---Unit-3"> </a>
+<h3 id="Compound-Boolean-Expression">
+<a class="anchor" href="#Compound-Boolean-Expression" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compound Boolean Expression<a class="anchor-link" href="#Compound-Boolean-Expression"> </a>
 </h3>
 <ul>
 <li>Compound Boolean Expressions are like &amp;&amp; which means that the code is executed based on if the first and second conditions are true.</li>
@@ -531,6 +532,59 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Compare-methods">
+<a class="anchor" href="#Compare-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compare methods<a class="anchor-link" href="#Compare-methods"> </a>
+</h3>
+<ul>
+<li>Comparing numbers: compare() method of Integer class of java.lang package compares two integer values (x, y) given
+as a parameter and returns the value zero if (x==y), if (x &lt; y) then it returns a value less than zero and
+if (x &gt; y) then it returns a value greater than zero.</li>
+<li>Comparing strings: if (string1 &gt; string2) it returns a positive value. If (string1 == string2) it returns 0.
+If (string1 &lt; string2) it returns a negative value</li>
+<li>Comparing objects: == and != operators</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+  
+<span class="c1">// as 10 less than 20, Output will be a value less than zero</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Integer</span><span class="p">.</span><span class="na">compare</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">));</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>-1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
