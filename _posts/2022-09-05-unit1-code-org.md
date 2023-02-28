@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: Code.org Unit 1 Takeaways
 categories: [markdown]
 comments: true

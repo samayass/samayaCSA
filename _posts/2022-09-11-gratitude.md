@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: Psychology and the Good Life Hacks
 categories: [markdown]
 comments: true

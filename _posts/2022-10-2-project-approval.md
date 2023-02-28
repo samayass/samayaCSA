@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: Project Approval - week 6
 categories: [markdown]
 comments: true
