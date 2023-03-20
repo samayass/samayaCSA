@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      5 min read
     
 </span></p>
 
@@ -139,57 +139,57 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">/*</span> <span class="n">This</span> <span class="ow">is</span> <span class="n">wrapper</span> <span class="n">class</span><span class="o">...</span>
- <span class="n">Objective</span> <span class="n">would</span> <span class="n">be</span> <span class="n">to</span> <span class="n">push</span> <span class="n">more</span> <span class="n">functionality</span> <span class="n">into</span> <span class="n">this</span> <span class="n">Class</span> <span class="n">to</span> <span class="n">enforce</span> <span class="n">consistent</span> <span class="n">definition</span>
- <span class="o">*/</span>
-<span class="n">public</span> <span class="n">abstract</span> <span class="k">class</span> <span class="nc">Generics</span> <span class="p">{</span>
-	<span class="n">public</span> <span class="n">final</span> <span class="n">String</span> <span class="n">masterType</span> <span class="o">=</span> <span class="s2">&quot;Generic&quot;</span><span class="p">;</span>
-	<span class="n">private</span> <span class="n">String</span> <span class="nb">type</span><span class="p">;</span>	<span class="o">//</span> <span class="n">extender</span> <span class="n">should</span> <span class="n">define</span> <span class="n">their</span> <span class="n">data</span> <span class="nb">type</span>
+<div class=" highlight hl-java"><pre><span></span><span class="cm">/* This is wrapper class...</span>
+<span class="cm"> Objective would be to push more functionality into this Class to enforce consistent definition</span>
+<span class="cm"> */</span>
+<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Generics</span> <span class="p">{</span>
+	<span class="kd">public</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">masterType</span> <span class="o">=</span> <span class="s">&quot;Generic&quot;</span><span class="p">;</span>
+	<span class="kd">private</span> <span class="n">String</span> <span class="n">type</span><span class="p">;</span>	<span class="c1">// extender should define their data type</span>
 
-	<span class="o">//</span> <span class="n">generic</span> <span class="n">enumerated</span> <span class="n">interface</span>
-	<span class="n">public</span> <span class="n">interface</span> <span class="n">KeyTypes</span> <span class="p">{</span>
-		<span class="n">String</span> <span class="n">name</span><span class="p">();</span>
+	<span class="c1">// generic enumerated interface</span>
+	<span class="kd">public</span> <span class="kd">interface</span> <span class="nc">KeyTypes</span> <span class="p">{</span>
+		<span class="n">String</span> <span class="nf">name</span><span class="p">();</span>
 	<span class="p">}</span>
-	<span class="n">protected</span> <span class="n">abstract</span> <span class="n">KeyTypes</span> <span class="n">getKey</span><span class="p">();</span>  	<span class="o">//</span> <span class="n">this</span> <span class="n">method</span> <span class="n">helps</span> <span class="n">force</span> <span class="n">usage</span> <span class="n">of</span> <span class="n">KeyTypes</span>
+	<span class="kd">protected</span> <span class="kd">abstract</span> <span class="n">KeyTypes</span> <span class="nf">getKey</span><span class="p">();</span>  	<span class="c1">// this method helps force usage of KeyTypes</span>
 
-	<span class="o">//</span> <span class="n">getter</span>
-	<span class="n">public</span> <span class="n">String</span> <span class="n">getMasterType</span><span class="p">()</span> <span class="p">{</span>
+	<span class="c1">// getter</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="nf">getMasterType</span><span class="p">()</span> <span class="p">{</span>
 		<span class="k">return</span> <span class="n">masterType</span><span class="p">;</span>
 	<span class="p">}</span>
 
-	<span class="o">//</span> <span class="n">getter</span>
-	<span class="n">public</span> <span class="n">String</span> <span class="n">getType</span><span class="p">()</span> <span class="p">{</span>
-		<span class="k">return</span> <span class="nb">type</span><span class="p">;</span>
+	<span class="c1">// getter</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="nf">getType</span><span class="p">()</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="n">type</span><span class="p">;</span>
 	<span class="p">}</span>
 
-	<span class="o">//</span> <span class="n">setter</span>
-	<span class="n">public</span> <span class="n">void</span> <span class="n">setType</span><span class="p">(</span><span class="n">String</span> <span class="nb">type</span><span class="p">)</span> <span class="p">{</span>
-		<span class="n">this</span><span class="o">.</span><span class="n">type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">;</span>
+	<span class="c1">// setter</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setType</span><span class="p">(</span><span class="n">String</span> <span class="n">type</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">this</span><span class="p">.</span><span class="na">type</span> <span class="o">=</span> <span class="n">type</span><span class="p">;</span>
 	<span class="p">}</span>
 	
-	<span class="o">//</span> <span class="n">this</span> <span class="n">method</span> <span class="ow">is</span> <span class="n">used</span> <span class="n">to</span> <span class="n">establish</span> <span class="n">key</span> <span class="n">order</span>
-	<span class="n">public</span> <span class="n">abstract</span> <span class="n">String</span> <span class="n">toString</span><span class="p">();</span>
+	<span class="c1">// this method is used to establish key order</span>
+	<span class="kd">public</span> <span class="kd">abstract</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">();</span>
 
-	<span class="o">//</span> <span class="n">static</span> <span class="nb">print</span> <span class="n">method</span> <span class="n">used</span> <span class="n">by</span> <span class="n">extended</span> <span class="n">classes</span>
-	<span class="n">public</span> <span class="n">static</span> <span class="n">void</span> <span class="nb">print</span><span class="p">(</span><span class="n">Generics</span><span class="p">[]</span> <span class="n">objs</span><span class="p">)</span> <span class="p">{</span>
-		<span class="o">//</span> <span class="nb">print</span> <span class="s1">&#39;Object&#39;</span> <span class="n">properties</span>
-		<span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">objs</span><span class="o">.</span><span class="n">getClass</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">objs</span><span class="o">.</span><span class="n">length</span><span class="p">);</span>
+	<span class="c1">// static print method used by extended classes</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">print</span><span class="p">(</span><span class="n">Generics</span><span class="o">[]</span> <span class="n">objs</span><span class="p">)</span> <span class="p">{</span>
+		<span class="c1">// print &#39;Object&#39; properties</span>
+		<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">objs</span><span class="p">.</span><span class="na">getClass</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">objs</span><span class="p">.</span><span class="na">length</span><span class="p">);</span>
 
-		<span class="o">//</span> <span class="nb">print</span> <span class="s1">&#39;Generics&#39;</span> <span class="n">properties</span>
-		<span class="k">if</span> <span class="p">(</span><span class="n">objs</span><span class="o">.</span><span class="n">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-			<span class="n">Generics</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">objs</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>	<span class="o">//</span> <span class="n">Look</span> <span class="n">at</span> <span class="n">properties</span> <span class="n">of</span> <span class="mi">1</span><span class="n">st</span> <span class="n">element</span>
-			<span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">(</span>
-					<span class="n">obj</span><span class="o">.</span><span class="n">getMasterType</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> 
-					<span class="n">obj</span><span class="o">.</span><span class="n">getType</span><span class="p">()</span> <span class="o">+</span>
-					<span class="s2">&quot; listed by &quot;</span> <span class="o">+</span>
-					<span class="n">obj</span><span class="o">.</span><span class="n">getKey</span><span class="p">());</span>
+		<span class="c1">// print &#39;Generics&#39; properties</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">objs</span><span class="p">.</span><span class="na">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+			<span class="n">Generics</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">objs</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>	<span class="c1">// Look at properties of 1st element</span>
+			<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span>
+					<span class="n">obj</span><span class="p">.</span><span class="na">getMasterType</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span> <span class="o">+</span> 
+					<span class="n">obj</span><span class="p">.</span><span class="na">getType</span><span class="p">()</span> <span class="o">+</span>
+					<span class="s">&quot; listed by &quot;</span> <span class="o">+</span>
+					<span class="n">obj</span><span class="p">.</span><span class="na">getKey</span><span class="p">());</span>
 		<span class="p">}</span>
 
-		<span class="o">//</span> <span class="nb">print</span> <span class="s2">&quot;Generics: Objects&#39;</span>
-		<span class="k">for</span><span class="p">(</span><span class="n">Object</span> <span class="n">o</span> <span class="p">:</span> <span class="n">objs</span><span class="p">)</span>	<span class="o">//</span> <span class="n">observe</span> <span class="n">that</span> <span class="nb">type</span> <span class="ow">is</span> <span class="n">Opaque</span>
-			<span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">o</span><span class="p">);</span>
+		<span class="c1">// print &quot;Generics: Objects&#39;</span>
+		<span class="k">for</span><span class="p">(</span><span class="n">Object</span> <span class="n">o</span> <span class="p">:</span> <span class="n">objs</span><span class="p">)</span>	<span class="c1">// observe that type is Opaque</span>
+			<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">o</span><span class="p">);</span>
 
-		<span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">();</span>
+		<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
 	<span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -208,90 +208,90 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">/*</span>
- <span class="o">*</span> <span class="n">Animal</span> <span class="k">class</span> <span class="nc">extends</span> <span class="n">Generics</span> <span class="ow">and</span> <span class="n">defines</span> <span class="n">abstract</span> <span class="n">methods</span>
- <span class="o">*/</span>
-<span class="n">public</span> <span class="k">class</span> <span class="nc">FRQ</span> <span class="n">extends</span> <span class="n">Generics</span> <span class="p">{</span>
-	<span class="o">//</span> <span class="n">Class</span> <span class="n">data</span>
-	<span class="n">public</span> <span class="n">static</span> <span class="n">KeyTypes</span> <span class="n">key</span> <span class="o">=</span> <span class="n">KeyType</span><span class="o">.</span><span class="n">title</span><span class="p">;</span>  <span class="o">//</span> <span class="n">static</span> <span class="n">initializer</span>
-	<span class="n">public</span> <span class="n">static</span> <span class="n">void</span> <span class="n">setOrder</span><span class="p">(</span><span class="n">KeyTypes</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span> <span class="n">FRQ</span><span class="o">.</span><span class="n">key</span> <span class="o">=</span> <span class="n">key</span><span class="p">;</span> <span class="p">}</span>
-	<span class="n">public</span> <span class="n">enum</span> <span class="n">KeyType</span> <span class="n">implements</span> <span class="n">KeyTypes</span> <span class="p">{</span><span class="n">title</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">problem</span><span class="p">,</span> <span class="n">subject</span><span class="p">,</span> <span class="n">difficulty</span><span class="p">,}</span>
+<div class=" highlight hl-java"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Animal class extends Generics and defines abstract methods</span>
+<span class="cm"> */</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">FRQ</span> <span class="kd">extends</span> <span class="n">Generics</span> <span class="p">{</span>
+	<span class="c1">// Class data</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="n">KeyTypes</span> <span class="n">key</span> <span class="o">=</span> <span class="n">KeyType</span><span class="p">.</span><span class="na">title</span><span class="p">;</span>  <span class="c1">// static initializer</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">setOrder</span><span class="p">(</span><span class="n">KeyTypes</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span> <span class="n">FRQ</span><span class="p">.</span><span class="na">key</span> <span class="o">=</span> <span class="n">key</span><span class="p">;</span> <span class="p">}</span>
+	<span class="kd">public</span> <span class="kd">enum</span> <span class="n">KeyType</span> <span class="kd">implements</span> <span class="n">KeyTypes</span> <span class="p">{</span><span class="n">title</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">problem</span><span class="p">,</span> <span class="n">subject</span><span class="p">,</span> <span class="n">difficulty</span><span class="p">,}</span>
 
-	<span class="o">//</span> <span class="n">Instance</span> <span class="n">data</span>
-	<span class="n">private</span> <span class="n">final</span> <span class="nb">int</span> <span class="n">year</span><span class="p">;</span>
-	<span class="n">private</span> <span class="n">final</span> <span class="nb">int</span> <span class="n">problem</span><span class="p">;</span>
-	<span class="n">private</span> <span class="n">final</span> <span class="n">String</span> <span class="n">subject</span><span class="p">;</span>
-	<span class="n">private</span> <span class="n">final</span> <span class="n">String</span> <span class="n">difficulty</span><span class="p">;</span>
+	<span class="c1">// Instance data</span>
+	<span class="kd">private</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">year</span><span class="p">;</span>
+	<span class="kd">private</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">problem</span><span class="p">;</span>
+	<span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">subject</span><span class="p">;</span>
+	<span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">difficulty</span><span class="p">;</span>
 
-	<span class="o">/*</span> <span class="n">constructor</span>
-	 <span class="o">*</span>
-	 <span class="o">*/</span>
-	<span class="n">public</span> <span class="n">FRQ</span><span class="p">(</span><span class="nb">int</span> <span class="n">year</span><span class="p">,</span> <span class="nb">int</span> <span class="n">problem</span><span class="p">,</span> <span class="n">String</span> <span class="n">subject</span><span class="p">,</span> <span class="n">String</span> <span class="n">difficulty</span><span class="p">)</span>
+	<span class="cm">/* constructor</span>
+<span class="cm">	 *</span>
+<span class="cm">	 */</span>
+	<span class="kd">public</span> <span class="nf">FRQ</span><span class="p">(</span><span class="kt">int</span> <span class="n">year</span><span class="p">,</span> <span class="kt">int</span> <span class="n">problem</span><span class="p">,</span> <span class="n">String</span> <span class="n">subject</span><span class="p">,</span> <span class="n">String</span> <span class="n">difficulty</span><span class="p">)</span>
 	<span class="p">{</span>
-		<span class="nb">super</span><span class="o">.</span><span class="n">setType</span><span class="p">(</span><span class="s2">&quot;FRQ&quot;</span><span class="p">);</span>
-		<span class="n">this</span><span class="o">.</span><span class="n">year</span> <span class="o">=</span> <span class="n">year</span><span class="p">;</span>
-		<span class="n">this</span><span class="o">.</span><span class="n">problem</span> <span class="o">=</span> <span class="n">problem</span><span class="p">;</span>
-		<span class="n">this</span><span class="o">.</span><span class="n">subject</span> <span class="o">=</span> <span class="n">subject</span><span class="p">;</span>
-		<span class="n">this</span><span class="o">.</span><span class="n">difficulty</span> <span class="o">=</span> <span class="n">difficulty</span><span class="p">;</span>
+		<span class="kd">super</span><span class="p">.</span><span class="na">setType</span><span class="p">(</span><span class="s">&quot;FRQ&quot;</span><span class="p">);</span>
+		<span class="k">this</span><span class="p">.</span><span class="na">year</span> <span class="o">=</span> <span class="n">year</span><span class="p">;</span>
+		<span class="k">this</span><span class="p">.</span><span class="na">problem</span> <span class="o">=</span> <span class="n">problem</span><span class="p">;</span>
+		<span class="k">this</span><span class="p">.</span><span class="na">subject</span> <span class="o">=</span> <span class="n">subject</span><span class="p">;</span>
+		<span class="k">this</span><span class="p">.</span><span class="na">difficulty</span> <span class="o">=</span> <span class="n">difficulty</span><span class="p">;</span>
 	<span class="p">}</span>
 
-	<span class="o">/*</span> <span class="s1">&#39;Generics&#39;</span> <span class="n">requires</span> <span class="n">getKey</span> <span class="n">to</span> <span class="n">help</span> <span class="n">enforce</span> <span class="n">KeyTypes</span> <span class="n">usage</span> <span class="o">*/</span>
+	<span class="cm">/* &#39;Generics&#39; requires getKey to help enforce KeyTypes usage */</span>
 	<span class="nd">@Override</span>
-	<span class="n">protected</span> <span class="n">KeyTypes</span> <span class="n">getKey</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">FRQ</span><span class="o">.</span><span class="n">key</span><span class="p">;</span> <span class="p">}</span>
+	<span class="kd">protected</span> <span class="n">KeyTypes</span> <span class="nf">getKey</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">FRQ</span><span class="p">.</span><span class="na">key</span><span class="p">;</span> <span class="p">}</span>
 	
-	<span class="o">/*</span> <span class="s1">&#39;Generics&#39;</span> <span class="n">requires</span> <span class="n">toString</span> <span class="n">override</span>
-	 <span class="o">*</span> <span class="n">toString</span> <span class="n">provides</span> <span class="n">data</span> <span class="n">based</span> <span class="n">off</span> <span class="n">of</span> <span class="n">Static</span> <span class="n">Key</span> <span class="n">setting</span>
-	 <span class="o">*/</span>
+	<span class="cm">/* &#39;Generics&#39; requires toString override</span>
+<span class="cm">	 * toString provides data based off of Static Key setting</span>
+<span class="cm">	 */</span>
 	<span class="nd">@Override</span>
-	<span class="n">public</span> <span class="n">String</span> <span class="n">toString</span><span class="p">()</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span>
 	<span class="p">{</span>
-		<span class="n">String</span> <span class="n">output</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">;</span>
-		<span class="k">if</span> <span class="p">(</span><span class="n">KeyType</span><span class="o">.</span><span class="n">year</span><span class="o">.</span><span class="n">equals</span><span class="p">(</span><span class="n">this</span><span class="o">.</span><span class="n">getKey</span><span class="p">()))</span> <span class="p">{</span>
-			<span class="n">output</span> <span class="o">+=</span> <span class="n">this</span><span class="o">.</span><span class="n">year</span><span class="p">;</span>
-			<span class="o">//</span> <span class="n">output</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="n">substring</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">length</span><span class="p">()</span> <span class="o">-</span> <span class="mi">2</span><span class="p">);</span>
-		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">KeyType</span><span class="o">.</span><span class="n">problem</span><span class="o">.</span><span class="n">equals</span><span class="p">(</span><span class="n">this</span><span class="o">.</span><span class="n">getKey</span><span class="p">()))</span> <span class="p">{</span>
-			<span class="n">output</span> <span class="o">+=</span> <span class="n">this</span><span class="o">.</span><span class="n">problem</span><span class="p">;</span>
-		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">KeyType</span><span class="o">.</span><span class="n">subject</span><span class="o">.</span><span class="n">equals</span><span class="p">(</span><span class="n">this</span><span class="o">.</span><span class="n">getKey</span><span class="p">()))</span> <span class="p">{</span>
-			<span class="n">output</span> <span class="o">+=</span> <span class="n">this</span><span class="o">.</span><span class="n">subject</span><span class="p">;</span>
-		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">KeyType</span><span class="o">.</span><span class="n">difficulty</span><span class="o">.</span><span class="n">equals</span><span class="p">(</span><span class="n">this</span><span class="o">.</span><span class="n">getKey</span><span class="p">()))</span> <span class="p">{</span>
-			<span class="n">output</span> <span class="o">+=</span> <span class="n">this</span><span class="o">.</span><span class="n">difficulty</span><span class="p">;</span>
+		<span class="n">String</span> <span class="n">output</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">;</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">KeyType</span><span class="p">.</span><span class="na">year</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getKey</span><span class="p">()))</span> <span class="p">{</span>
+			<span class="n">output</span> <span class="o">+=</span> <span class="k">this</span><span class="p">.</span><span class="na">year</span><span class="p">;</span>
+			<span class="c1">// output = output.substring(output.length() - 2);</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">KeyType</span><span class="p">.</span><span class="na">problem</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getKey</span><span class="p">()))</span> <span class="p">{</span>
+			<span class="n">output</span> <span class="o">+=</span> <span class="k">this</span><span class="p">.</span><span class="na">problem</span><span class="p">;</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">KeyType</span><span class="p">.</span><span class="na">subject</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getKey</span><span class="p">()))</span> <span class="p">{</span>
+			<span class="n">output</span> <span class="o">+=</span> <span class="k">this</span><span class="p">.</span><span class="na">subject</span><span class="p">;</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">KeyType</span><span class="p">.</span><span class="na">difficulty</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getKey</span><span class="p">()))</span> <span class="p">{</span>
+			<span class="n">output</span> <span class="o">+=</span> <span class="k">this</span><span class="p">.</span><span class="na">difficulty</span><span class="p">;</span>
 		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-			<span class="n">output</span> <span class="o">+=</span> <span class="nb">super</span><span class="o">.</span><span class="n">getType</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="n">this</span><span class="o">.</span><span class="n">year</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="n">this</span><span class="o">.</span><span class="n">problem</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="n">this</span><span class="o">.</span><span class="n">subject</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="n">this</span><span class="o">.</span><span class="n">difficulty</span><span class="p">;</span>
+			<span class="n">output</span> <span class="o">+=</span> <span class="kd">super</span><span class="p">.</span><span class="na">getType</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">year</span> <span class="o">+</span> <span class="s">&quot;, &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">problem</span> <span class="o">+</span> <span class="s">&quot;, &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">subject</span> <span class="o">+</span> <span class="s">&quot;, &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">difficulty</span><span class="p">;</span>
 		<span class="p">}</span>
 		<span class="k">return</span> <span class="n">output</span><span class="p">;</span>
 		
 	<span class="p">}</span>
 
-	<span class="o">//</span> <span class="n">Test</span> <span class="n">data</span> <span class="n">initializer</span>
-	<span class="n">public</span> <span class="n">static</span> <span class="n">FRQ</span><span class="p">[]</span> <span class="n">FRQs</span><span class="p">()</span> <span class="p">{</span>
-		<span class="k">return</span> <span class="n">new</span> <span class="n">FRQ</span><span class="p">[]{</span>
-				<span class="n">new</span> <span class="n">FRQ</span><span class="p">(</span><span class="mi">2010</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Control Structures&quot;</span><span class="p">,</span> <span class="s2">&quot;Medium&quot;</span><span class="p">),</span>
-				<span class="n">new</span> <span class="n">FRQ</span><span class="p">(</span><span class="mi">2015</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Arrays&quot;</span><span class="p">,</span> <span class="s2">&quot;Easy&quot;</span><span class="p">),</span>
-				<span class="n">new</span> <span class="n">FRQ</span><span class="p">(</span><span class="mi">2017</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;2D Arrays&quot;</span><span class="p">,</span> <span class="s2">&quot;Easy&quot;</span><span class="p">),</span>
-				<span class="n">new</span> <span class="n">FRQ</span><span class="p">(</span><span class="mi">2021</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;Writing Classes&quot;</span><span class="p">,</span> <span class="s2">&quot;Hard&quot;</span><span class="p">),</span>
+	<span class="c1">// Test data initializer</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="n">FRQ</span><span class="o">[]</span> <span class="nf">FRQs</span><span class="p">()</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="k">new</span> <span class="n">FRQ</span><span class="o">[]</span><span class="p">{</span>
+				<span class="k">new</span> <span class="n">FRQ</span><span class="p">(</span><span class="mi">2010</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&quot;Control Structures&quot;</span><span class="p">,</span> <span class="s">&quot;Medium&quot;</span><span class="p">),</span>
+				<span class="k">new</span> <span class="n">FRQ</span><span class="p">(</span><span class="mi">2015</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&quot;Arrays&quot;</span><span class="p">,</span> <span class="s">&quot;Easy&quot;</span><span class="p">),</span>
+				<span class="k">new</span> <span class="n">FRQ</span><span class="p">(</span><span class="mi">2017</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s">&quot;2D Arrays&quot;</span><span class="p">,</span> <span class="s">&quot;Easy&quot;</span><span class="p">),</span>
+				<span class="k">new</span> <span class="n">FRQ</span><span class="p">(</span><span class="mi">2021</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s">&quot;Writing Classes&quot;</span><span class="p">,</span> <span class="s">&quot;Hard&quot;</span><span class="p">),</span>
 
 		<span class="p">};</span>
 	<span class="p">}</span>
 	
-	<span class="o">/*</span> <span class="n">main</span> <span class="n">to</span> <span class="n">test</span> <span class="n">Animal</span> <span class="k">class</span>
-	 <span class="err">* </span>
-	 <span class="o">*/</span>
-	<span class="n">public</span> <span class="n">static</span> <span class="n">void</span> <span class="n">main</span><span class="p">(</span><span class="n">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+	<span class="cm">/* main to test Animal class</span>
+<span class="cm">	 * </span>
+<span class="cm">	 */</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
 	<span class="p">{</span>
-		<span class="o">//</span> <span class="n">Inheritance</span> <span class="n">Hierarchy</span>
-		<span class="n">FRQ</span><span class="p">[]</span> <span class="n">objs</span> <span class="o">=</span> <span class="n">FRQs</span><span class="p">();</span>
+		<span class="c1">// Inheritance Hierarchy</span>
+		<span class="n">FRQ</span><span class="o">[]</span> <span class="n">objs</span> <span class="o">=</span> <span class="n">FRQs</span><span class="p">();</span>
 
-		<span class="o">//</span> <span class="nb">print</span> <span class="k">with</span> <span class="n">title</span>
-		<span class="n">FRQ</span><span class="o">.</span><span class="n">setOrder</span><span class="p">(</span><span class="n">KeyType</span><span class="o">.</span><span class="n">title</span><span class="p">);</span>
-		<span class="n">FRQ</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">objs</span><span class="p">);</span>
+		<span class="c1">// print with title</span>
+		<span class="n">FRQ</span><span class="p">.</span><span class="na">setOrder</span><span class="p">(</span><span class="n">KeyType</span><span class="p">.</span><span class="na">title</span><span class="p">);</span>
+		<span class="n">FRQ</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">objs</span><span class="p">);</span>
 
-		<span class="o">//</span> <span class="nb">print</span> <span class="n">name</span> <span class="n">only</span>
-		<span class="n">FRQ</span><span class="o">.</span><span class="n">setOrder</span><span class="p">(</span><span class="n">KeyType</span><span class="o">.</span><span class="n">year</span><span class="p">);</span>
-		<span class="n">FRQ</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">objs</span><span class="p">);</span>
+		<span class="c1">// print name only</span>
+		<span class="n">FRQ</span><span class="p">.</span><span class="na">setOrder</span><span class="p">(</span><span class="n">KeyType</span><span class="p">.</span><span class="na">year</span><span class="p">);</span>
+		<span class="n">FRQ</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">objs</span><span class="p">);</span>
 	<span class="p">}</span>
 
 <span class="p">}</span>
-<span class="n">FRQ</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="n">null</span><span class="p">);</span>
+<span class="n">FRQ</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -317,6 +317,138 @@ Generic: FRQ listed by year
 2015
 2017
 2021
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Animal class extends Generics and defines abstract methods</span>
+<span class="cm"> */</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Review</span> <span class="kd">extends</span> <span class="n">Generics</span> <span class="p">{</span>
+	<span class="c1">// Class data</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="n">KeyTypes</span> <span class="n">key</span> <span class="o">=</span> <span class="n">KeyType</span><span class="p">.</span><span class="na">title</span><span class="p">;</span>  <span class="c1">// static initializer</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">setOrder</span><span class="p">(</span><span class="n">KeyTypes</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span> <span class="n">Review</span><span class="p">.</span><span class="na">key</span> <span class="o">=</span> <span class="n">key</span><span class="p">;</span> <span class="p">}</span>
+	<span class="kd">public</span> <span class="kd">enum</span> <span class="n">KeyType</span> <span class="kd">implements</span> <span class="n">KeyTypes</span> <span class="p">{</span><span class="n">title</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">problem</span><span class="p">,</span> <span class="n">rating</span><span class="p">,</span> <span class="n">interactivity</span><span class="p">,</span> <span class="n">questions</span><span class="p">}</span>
+
+	<span class="c1">// Instance data</span>
+	<span class="kd">private</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">year</span><span class="p">;</span>
+	<span class="kd">private</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">problem</span><span class="p">;</span>
+	<span class="kd">private</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">rating</span><span class="p">;</span>
+	<span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">interactivity</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">questions</span><span class="p">;</span>
+
+
+	<span class="cm">/* constructor</span>
+<span class="cm">	 *</span>
+<span class="cm">	 */</span>
+	<span class="kd">public</span> <span class="nf">Review</span><span class="p">(</span><span class="kt">int</span> <span class="n">year</span><span class="p">,</span> <span class="kt">int</span> <span class="n">problem</span><span class="p">,</span> <span class="kt">int</span> <span class="n">rating</span><span class="p">,</span> <span class="n">String</span> <span class="n">interactivity</span><span class="p">,</span> <span class="n">String</span> <span class="n">questions</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="kd">super</span><span class="p">.</span><span class="na">setType</span><span class="p">(</span><span class="s">&quot;Review&quot;</span><span class="p">);</span>
+		<span class="k">this</span><span class="p">.</span><span class="na">year</span> <span class="o">=</span> <span class="n">year</span><span class="p">;</span>
+		<span class="k">this</span><span class="p">.</span><span class="na">problem</span> <span class="o">=</span> <span class="n">problem</span><span class="p">;</span>
+		<span class="k">this</span><span class="p">.</span><span class="na">rating</span> <span class="o">=</span> <span class="n">rating</span><span class="p">;</span>
+		<span class="k">this</span><span class="p">.</span><span class="na">interactivity</span> <span class="o">=</span> <span class="n">interactivity</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">questions</span> <span class="o">=</span> <span class="n">questions</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="cm">/* &#39;Generics&#39; requires getKey to help enforce KeyTypes usage */</span>
+	<span class="nd">@Override</span>
+	<span class="kd">protected</span> <span class="n">KeyTypes</span> <span class="nf">getKey</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">Review</span><span class="p">.</span><span class="na">key</span><span class="p">;</span> <span class="p">}</span>
+	
+	<span class="cm">/* &#39;Generics&#39; requires toString override</span>
+<span class="cm">	 * toString provides data based off of Static Key setting</span>
+<span class="cm">	 */</span>
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="n">String</span> <span class="n">output</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">;</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">KeyType</span><span class="p">.</span><span class="na">year</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getKey</span><span class="p">()))</span> <span class="p">{</span>
+			<span class="n">output</span> <span class="o">+=</span> <span class="k">this</span><span class="p">.</span><span class="na">year</span><span class="p">;</span>
+			<span class="c1">// output = output.substring(output.length() - 2);</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">KeyType</span><span class="p">.</span><span class="na">problem</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getKey</span><span class="p">()))</span> <span class="p">{</span>
+			<span class="n">output</span> <span class="o">+=</span> <span class="k">this</span><span class="p">.</span><span class="na">problem</span><span class="p">;</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">KeyType</span><span class="p">.</span><span class="na">rating</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getKey</span><span class="p">()))</span> <span class="p">{</span>
+			<span class="n">output</span> <span class="o">+=</span> <span class="k">this</span><span class="p">.</span><span class="na">rating</span><span class="p">;</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">KeyType</span><span class="p">.</span><span class="na">interactivity</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getKey</span><span class="p">()))</span> <span class="p">{</span>
+			<span class="n">output</span> <span class="o">+=</span> <span class="k">this</span><span class="p">.</span><span class="na">interactivity</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">KeyType</span><span class="p">.</span><span class="na">questions</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getKey</span><span class="p">()))</span> <span class="p">{</span>
+			<span class="n">output</span> <span class="o">+=</span> <span class="k">this</span><span class="p">.</span><span class="na">questions</span><span class="p">;</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+			<span class="n">output</span> <span class="o">+=</span> <span class="kd">super</span><span class="p">.</span><span class="na">getType</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">year</span> <span class="o">+</span> <span class="s">&quot;, &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">problem</span> <span class="o">+</span> <span class="s">&quot;, &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">rating</span> <span class="o">+</span> <span class="s">&quot;, &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">interactivity</span> <span class="o">+</span> <span class="s">&quot;, &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">questions</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">return</span> <span class="n">output</span><span class="p">;</span>
+		
+	<span class="p">}</span>
+
+	<span class="c1">// Test data initializer</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="n">Review</span><span class="o">[]</span> <span class="nf">reviews</span><span class="p">()</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="k">new</span> <span class="n">Review</span><span class="o">[]</span><span class="p">{</span>
+				<span class="k">new</span> <span class="n">Review</span><span class="p">(</span><span class="mi">2010</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s">&quot;Good&quot;</span><span class="p">,</span> <span class="s">&quot;Why is this considered a control structures question?&quot;</span><span class="p">),</span>
+				<span class="k">new</span> <span class="n">Review</span><span class="p">(</span><span class="mi">2015</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&quot;Poor&quot;</span><span class="p">,</span> <span class="s">&quot;How does this array work?&quot;</span><span class="p">),</span>
+				<span class="k">new</span> <span class="n">Review</span><span class="p">(</span><span class="mi">2017</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="s">&quot;Excellent&quot;</span><span class="p">,</span> <span class="s">&quot;Why would a normal array not work here?&quot;</span><span class="p">),</span>
+				<span class="k">new</span> <span class="n">Review</span><span class="p">(</span><span class="mi">2017</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s">&quot;Good&quot;</span><span class="p">,</span> <span class="s">&quot;Would this not be categorized as methods and control structures?&quot;</span><span class="p">),</span>
+
+		<span class="p">};</span>
+	<span class="p">}</span>
+	
+	<span class="cm">/* main to test Animal class</span>
+<span class="cm">	 * </span>
+<span class="cm">	 */</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="c1">// Inheritance Hierarchy</span>
+		<span class="n">Review</span><span class="o">[]</span> <span class="n">objs</span> <span class="o">=</span> <span class="n">reviews</span><span class="p">();</span>
+
+		<span class="c1">// print with title</span>
+		<span class="n">Review</span><span class="p">.</span><span class="na">setOrder</span><span class="p">(</span><span class="n">KeyType</span><span class="p">.</span><span class="na">title</span><span class="p">);</span>
+		<span class="n">Review</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">objs</span><span class="p">);</span>
+
+		<span class="c1">// print name only</span>
+		<span class="n">Review</span><span class="p">.</span><span class="na">setOrder</span><span class="p">(</span><span class="n">KeyType</span><span class="p">.</span><span class="na">interactivity</span><span class="p">);</span>
+		<span class="n">Review</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">objs</span><span class="p">);</span>
+	<span class="p">}</span>
+
+<span class="p">}</span>
+<span class="n">Review</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>class [LREPL.$JShell$12F$Review; 4
+Generic: Review listed by title
+Review: 2010, 1, 4, Good, Why is this considered a control structures question?
+Review: 2015, 1, 2, Poor, How does this array work?
+Review: 2017, 4, 5, Excellent, Why would a normal array not work here?
+Review: 2017, 3, 3, Good, Would this not be categorized as methods and control structures?
+
+class [LREPL.$JShell$12F$Review; 4
+Generic: Review listed by interactivity
+Good
+Poor
+Excellent
+Good
 
 </pre>
 </div>
