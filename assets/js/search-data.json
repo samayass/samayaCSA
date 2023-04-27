@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Recursion Lesson",
+            "content": "Vocab . Big O notation for Hash map, Binary Search, Single loop, Nested Loop . Big O notation describes the set of all algorithms that run no worse than a certain speed, no better than a certain speed, and at a certain speed | Shows the number of operations it will perform | . Introduction to Recursion . a method that calls itself | contains at least one base case that halts recursion and once recursive call | each recursive call has own local variables | parameter values take progress of recursive process | a recursion can be replaced with an iterative and give the same result | recursion can traverse string, array and arraylist objects | . Merge Sort . can be used to sort arraylists | Uses a divide and conquer algorithm | divides the array into halves and then calls itself for the two different halves in order to sort them | merges the two sorted halves into one list | Merging Values into One Sorted Array | copy the original elements into a temporary array | work from left to right in each virtual array to | compare element and return them to the correct order in the original array | .",
+            "url": "https://samayass.github.io/samayaCSA/ap/2023/04/26/recursion.html",
+            "relUrl": "/ap/2023/04/26/recursion.html",
+            "date": " • Apr 26, 2023"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Arrays and 2D Arrays Hacks (Macro Monkeys)",
             "content": "Hack: Create method that sets all elements in array to n . void setArray(int[] arr, int n) { n = 10; for (int i=0; i&lt;array.length; i++) { arr[i]=n; } } int[] array = new int[10]; setArray(array, 10); for (int i = 0; i&lt;array.length; i++) { System.out.println(array[i]); } // Should print all 10s when working properly . 10 10 10 10 10 10 10 10 10 10 . Hack: Write an array to find the average of an array . //Example finding the max in an array. //Finds the maximum in an array public static int average(int[] array) { int sum=0; for (int i=0; i&lt;array.length; i++) { sum+=array[i]; } return sum/array.length; } //tester array int[] test = {3, 5, 7, 2, 10}; //returns 10 System.out.println(average(test)); . 5 . Hack: Find the average number of a diagonal in a 2d array . For example, here find the average of the bolded #s 1 2 3 4 5 6 7 8 9 1 2 3 . public static double averageDiagonal (int[][] array2D) { int sum =0; for (int r =0; r&lt;array2D.length; r++) { sum+= array2D[r][r]; } return (double) sum/array2D.length; } int[][] arr = { {1,2,3,4,5,6}, {7,8,9,10,11,12}, {0,1,2,3,4,5}, {10,11,12,13,14,15}, {15,16,17,18,19,20} }; System.out.println(averageDiagonal(arr)); . 8.6 .",
             "url": "https://samayass.github.io/samayaCSA/cb/2023/04/26/grp2.html",
@@ -12,23 +23,12 @@
     
   
     
-        ,"post1": {
-            "title": "Recursion Lesson",
-            "content": "Vocab . Big O notation for Hash map, Binary Search, Single loop, Nested Loop . Big O notation describes the set of all algorithms that run no worse than a certain speed, no better than a certain speed, and at a certain speed | Shows the number of operations it will perform | . Introduction to Recursion . a method that calls itself | contains at least one base case that halts recursion and once recursive call | each recursive call has own local variables | parameter values take progress of recursive process | a recursion can be replaced with an iterative and give the same result | recursion can traverse string, array and arraylist objects | . Merge Sort . can be used to sort arraylists | Uses a divide and conquer algorithm | divides the array into halves and then calls itself for the two different halves in order to sort them | merges the two sorted halves into one list | Merging Values into One Sorted Array | copy the original elements into a temporary array | work from left to right in each virtual array to | compare element and return them to the correct order in the original array | .",
-            "url": "https://samayass.github.io/samayaCSA/ap/2023/04/25/recursion.html",
-            "relUrl": "/ap/2023/04/25/recursion.html",
-            "date": " • Apr 25, 2023"
-        }
-        
-    
-  
-    
         ,"post2": {
             "title": "Letter Of Rec",
             "content": "Experiences . One memorable experience for me was during CSP last year when I was given the task of Deployment Manager during the second trimester. I remember attending that first deployment meeting and not understanding anything about the process or just how it worked. After that meeting I went and bought a raspberry pi kit so I could deploy my groups project. Deployment itself was really hard for me because I was not familiar with the idea of it, but with a lot of time and effort put in I was able to figure out the technical ideas of it like port forwarding. During this process I remember individually asking you for help with the domain name and I had never really liked the idea of asking for help because I was intimidated, but with your help I was able to deploy the project in time. Now this year in CSA when we were asked to deploy our own individual projects I remember getting an error that I could not figure out and instead of individually asking you I asked on the general channel and was able to fix the problem with their help. Along with that I also remember other people in CSA messaging me and asking me to help them with their deployment as well. Since then we have deployed maybe 2 more times and each time I have had different experiences with different errors but I was able to research and fix the problem myself. . My second memorable experience was during the last trimester when I was the backend developer for my group and we had to make a database for our project. Before this I was never really considered the ‘backend developer’ of a group, but this time I wanted to challenge myself and also be able to learn more about Java for the AP test. I had struggled with the database for a while an how I was going to implement it with my PBL theme, but eventually I was able to get help from my table group and I researched more about the topic and was able to get it working by Night At The Museum. . Another memorable experience was during CSP last year when we had to do a vocabulary review for all the terms that we had learned until then (last year with Alice as my partner). There were a lot of terms and definitions that we had to format and show our understanding for. I remember I enjoyed having this live review because it was a good review that showed my understanding of the key concepts. This was a good learning experience because I was able to talk about the difficulties of concepts during this review but also establish the idea that I was able to grasp the understanding. .",
-            "url": "https://samayass.github.io/samayaCSA/2023/04/25/Letter-of-Rec.html",
-            "relUrl": "/2023/04/25/Letter-of-Rec.html",
-            "date": " • Apr 25, 2023"
+            "url": "https://samayass.github.io/samayaCSA/2023/04/26/Letter-of-Rec.html",
+            "relUrl": "/2023/04/26/Letter-of-Rec.html",
+            "date": " • Apr 26, 2023"
         }
         
     
@@ -37,9 +37,9 @@
         ,"post3": {
             "title": "Csusm Extra Credit",
             "content": "While this might have been a promo for Cal State University San Marcos, I am genuinely grateful for being able to attend this event, learn about the presenters Ashley and John, gain more knowledge about college in general, and have hands-on experience. Beginning with Ashley, she explained how she majored in Applied Physics while failing her AP Physics class. This really resonated with me because even though I am not failing physics it is still a difficult class for me. This showed me that even though I may find topics I struggle with in high school, I can still pursue them at a higher level if I truly enjoy them. This also applies to computer science, because while I might not be the best at it if I truly want to learn this field at a higher educational level I will be able to if I am dedicated. Ashley also explained how she is trying to get a Ph.D. in material science and engineering which is also interesting to me because her being an Applied Physics major means that it can open doors to many other fields. She also talked about how she uses computer science in her major too (python) and this shows how computer science is such a versatile field that can be applied to other industries. Moving on to John, he explained how straight out of high school he attended Palomar College, then transferred to CSUSM. By explaining this he is showing that there are many different kinds of people that attend CSUSM and it is a college that gives opportunities to everyone. To end their presentation, Ashley and John, let us experiment with making a toothbrush vibrate which was a unique experience, since these events are usually more lecture-style. This helped me understand that I am interested in an engineering or STEM-related field and hopefully I can use this encounter in the future. . Next, Ashley and John talked about internships, clubs, and research projects. They gave valuable advice considering that I am a junior and am applying for internships. They emphasized the importance of networking, checking emails, and joining clubs. They also were adamant about us understanding that unpaid internships are not worth the trouble because while we as students would be learning valuable concepts our time and effort is still worth a certain amount. Additionally, they explained that networking is extremely important and two ways to do this is by asking faculty members to read your essays and join clubs. I hope to execute these suggestions to truly see the benefits of doing such ideas, and I hope in the process I would be able to make valuable connections that I can use in the future. Joining clubs is also key in creating networking opportunities because it gives you more opportunities to interact with fellow students. This helped me realize that while I might not truly be interested in certain club activities in the future they still help me gain the possibility of connections and opportunities. Lastly, paraphrasing Ashley, CS is used no matter the field, so I hope to gain valuable experiences from this class that are applicable to my future wherever I go and whatever I plan to major in. . Also, this was my favorite extra credit event because Ellie gave me her CSUSM squishy .",
-            "url": "https://samayass.github.io/samayaCSA/2023/04/25/CSUSM-Extra-Credit.html",
-            "relUrl": "/2023/04/25/CSUSM-Extra-Credit.html",
-            "date": " • Apr 25, 2023"
+            "url": "https://samayass.github.io/samayaCSA/2023/04/26/CSUSM-Extra-Credit.html",
+            "relUrl": "/2023/04/26/CSUSM-Extra-Credit.html",
+            "date": " • Apr 26, 2023"
         }
         
     
@@ -48,9 +48,9 @@
         ,"post4": {
             "title": " Test Corrections",
             "content": ". . B is incorrect because a variable of type TennisPlayer can reference an object of type TennisPlayer. (interface no longer part of APCSA exam) . . E is incorrect because that would be the answer if it was a float data type division, but since it is data type int the answer is 401. . . B is incorrect because the values in each row of numbers would be used to access the element at these indices. For the first iteration of the outer loop: row would be {1, 2, 3}. . . C is incorrect because 1 will cause a compile-time error if added to the SomeMethods class because it has the same method signature as public void one (int first) .",
-            "url": "https://samayass.github.io/samayaCSA/2023/04/25/Test-Corrections.html",
-            "relUrl": "/2023/04/25/Test-Corrections.html",
-            "date": " • Apr 25, 2023"
+            "url": "https://samayass.github.io/samayaCSA/2023/04/26/Test-Corrections.html",
+            "relUrl": "/2023/04/26/Test-Corrections.html",
+            "date": " • Apr 26, 2023"
         }
         
     
@@ -59,9 +59,9 @@
         ,"post5": {
             "title": " Mc",
             "content": ". . In this case E would be wrong because dividing and integer value and a double value will automatically output a double, so there is not need to turn it into a double. C would be right because there is no need to turn the value into a double if it already is one. . . B is incorrect because you can assign int values to double values. D is correct because they are not instance variables of the Points class and they are not defined anywhere in the incrementPoints method. . . A is incorrect because in the III code segment would also return the correct category because the logic is correct. . . D is incorrect because in the III code segment i is representing the element not the index of the array. So I is the only correct answer. .",
-            "url": "https://samayass.github.io/samayaCSA/2023/04/25/MC.html",
-            "relUrl": "/2023/04/25/MC.html",
-            "date": " • Apr 25, 2023"
+            "url": "https://samayass.github.io/samayaCSA/2023/04/26/MC.html",
+            "relUrl": "/2023/04/26/MC.html",
+            "date": " • Apr 26, 2023"
         }
         
     
@@ -563,6 +563,17 @@
   
     
         ,"post51": {
+            "title": "Recursion, Sorting, and Arraylists - Group 3",
+            "content": "Recursion Hack . public void drawLine(int n) { for (int i = 1; i &lt;= n; i++) { System.out.print(&quot;*&quot;); } if (n&gt;0){ System.out.println(); drawLine(n - 1); } } drawLine(10); . ********** ********* ******** ******* ****** ***** **** *** ** * . Sorting Hack . import java.util.ArrayList; import java.util.Collections; import java.util.Comparator; public class Main { public static void main(String[] args) { ArrayList&lt;Country&gt; countries = new ArrayList&lt;Country&gt;(); countries.add(new Country(&quot;Russia&quot;, 17098246)); countries.add(new Country(&quot;Australia&quot;, 7692024)); countries.add(new Country(&quot;Argentina&quot;, 2780400)); countries.add(new Country(&quot;United States&quot;, 9372610)); countries.add(new Country(&quot;Canada&quot;, 9984670)); countries.add(new Country(&quot;China&quot;, 9596961)); countries.add(new Country(&quot;Brazil&quot;, 8515767)); countries.add(new Country(&quot;India&quot;, 3287263)); // Sort the countries in decreasing order of size using a selection sort algorithm and a Comparator Comparator&lt;Country&gt; sizeComparator = new Comparator&lt;Country&gt;() { @Override public int compare(Country c1, Country c2) { return c1.getSize() - c2.getSize(); } }; for (int i = 0; i &lt; countries.size() - 1; i++) { int maxIndex = i; for (int j = i + 1; j &lt; countries.size(); j++) { if (sizeComparator.compare(countries.get(j), countries.get(maxIndex)) &gt; 0) { maxIndex = j; } } if (maxIndex != i) { Collections.swap(countries, i, maxIndex); } } // Print the sorted countries for (Country country : countries) { System.out.println(country.getName() + &quot; (&quot; + country.getSize() + &quot;)&quot;); } } } class Country { private String name; private int size; public Country(String name, int size) { this.name = name; this.size = size; } public String getName() { return name; } public int getSize() { return size; } } Main.main(null); . Russia (17098246) Canada (9984670) China (9596961) United States (9372610) Brazil (8515767) Australia (7692024) India (3287263) Argentina (2780400) . Arraylists Hack . ArrayList&lt;Integer&gt; list = new ArrayList&lt;Integer&gt;(); list.add(3); list.add(6); list.add(9); list.add(10); list.add(2); list.add(1); public ArrayList&lt;Integer&gt; everyOther(ArrayList&lt;Integer&gt; list) { for (int i = list.size() - 1; i &gt;= 0; i--) { if (i % 2 == 0) { list.remove(i); } } return list; } System.out.println(everyOther(list)); . [6, 10, 1] . ArrayList&lt;Character&gt; list = new ArrayList&lt;Character&gt;(); list.add(&#39;k&#39;); list.add(&#39;m&#39;); list.add(&#39;s&#39;); list.add(&#39;l&#39;); list.add(&#39;o&#39;); list.add(&#39;j&#39;); public ArrayList&lt;Character&gt; overwrite(ArrayList&lt;Character&gt; list) { int originalSize = list.size(); list.clear(); for (char c = &#39;a&#39;; c &lt; &#39;a&#39; + originalSize; c++) { list.add(c); } return list; } System.out.println(overwrite(list)); . [a, b, c, d, e, f] .",
+            "url": "https://samayass.github.io/samayaCSA/cb/2022/04/24/grp3.html",
+            "relUrl": "/cb/2022/04/24/grp3.html",
+            "date": " • Apr 24, 2022"
+        }
+        
+    
+  
+    
+        ,"post52": {
             "title": "Seed",
             "content": "import java.util.Scanner; public class BinaryAddition { public static void main(String args[]){ Scanner sc = new Scanner(System.in); System.out.println(&quot;Enter a binary number: &quot;); String input1 = sc.nextLine(); System.out.println(input1); int decimal=Integer.parseInt(input1,2); System.out.println(&quot;Enter another binary number: &quot;); String input2 = sc.nextLine(); System.out.println(input2); int decimal1=Integer.parseInt(input2,2); int add = decimal + decimal1; System.out.println(&quot;Binary Addition:&quot;); String finalBinary = Integer.toBinaryString(add); System.out.println(input1 + &quot;+&quot; + input2 + &quot;=&quot; + finalBinary); sc.close(); } } BinaryAddition.main(null); . Enter a binary number: 1 Enter another binary number: 1 Binary Addition: 1+1=10 .",
             "url": "https://samayass.github.io/samayaCSA/tri3/2022/03/06/seed.html",
@@ -573,7 +584,7 @@
     
   
     
-        ,"post52": {
+        ,"post53": {
             "title": "An Example Markdown Post",
             "content": "Example Markdown Post . Basic setup . Jekyll requires blog post files to be named according to the following format: . YEAR-MONTH-DAY-filename.md . Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and filename is whatever file name you choose, to remind yourself what this post is about. .md is the file extension for markdown files. . The first line of the file should start with a single hash character, then a space, then your title. This is how you create a “level 1 heading” in markdown. Then you can create level 2, 3, etc headings as you wish but repeating the hash character, such as you see in the line ## File names above. . Basic formatting . You can use italics, bold, code font text, and create links. Here’s a footnote 1. Here’s a horizontal rule: . . Lists . Here’s a list: . item 1 | item 2 | . And a numbered list: . item 1 | item 2 | Boxes and stuff . This is a quotation . . You can include alert boxes …and… . . You can include info boxes Images . . Code . You can format text and code per usual . General preformatted text: . # Do a thing do_thing() . Python code and output: . # Prints &#39;2&#39; print(1+1) . 2 . Formatting text as shell commands: . echo &quot;hello world&quot; ./some_script.sh --option &quot;value&quot; wget https://example.com/cat_photo1.png . Formatting text as YAML: . key: value - another_key: &quot;another value&quot; . Tables . Column 1 Column 2 . A thing | Another thing | . Tweetcards . Altair 4.0 is released! https://t.co/PCyrIOTcvvTry it with: pip install -U altairThe full list of changes is at https://t.co/roXmzcsT58 ...read on for some highlights. pic.twitter.com/vWJ0ZveKbZ . &mdash; Jake VanderPlas (@jakevdp) December 11, 2019 Footnotes . This is the footnote. &#8617; . |",
             "url": "https://samayass.github.io/samayaCSA/markdown/2020/01/14/test-markdown-post.html",
