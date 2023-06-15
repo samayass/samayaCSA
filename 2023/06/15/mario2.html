@@ -4,23 +4,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Samaya | CSA</title>
+<title>Mario Animation | Samaya</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Samaya" />
+<meta property="og:title" content="Mario Animation" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="CSA" />
-<meta property="og:description" content="CSA" />
-<link rel="canonical" href="https://samayass.github.io/samayaCSA/" />
-<meta property="og:url" content="https://samayass.github.io/samayaCSA/" />
+<meta name="description" content="Mario" />
+<meta property="og:description" content="Mario" />
+<link rel="canonical" href="https://samayass.github.io/samayaCSA/2023/06/15/mario2.html" />
+<meta property="og:url" content="https://samayass.github.io/samayaCSA/2023/06/15/mario2.html" />
 <meta property="og:site_name" content="Samaya" />
-<meta property="og:image" content="https://samayass.github.io/samayaCSA/images/logo.png" />
-<meta property="og:type" content="website" />
-<link rel="next" href="https://samayass.github.io/samayaCSA/page2/" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://samayass.github.io/samayaCSA/images/logo.png" />
-<meta property="twitter:title" content="Samaya" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-06-15T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Mario Animation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"CSA","headline":"Samaya","image":"https://samayass.github.io/samayaCSA/images/logo.png","name":"Samaya","url":"https://samayass.github.io/samayaCSA/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-15T00:00:00-05:00","datePublished":"2023-06-15T00:00:00-05:00","description":"Mario","headline":"Mario Animation","mainEntityOfPage":{"@type":"WebPage","@id":"https://samayass.github.io/samayaCSA/2023/06/15/mario2.html"},"url":"https://samayass.github.io/samayaCSA/2023/06/15/mario2.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/samayaCSA/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://samayass.github.io/samayaCSA/feed.xml" title="Samaya" /><link rel="shortcut icon" type="image/x-icon" href="/samayaCSA/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -72,111 +70,119 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><h1 id="posts">Posts</h1>
+        <style>
+    canvas {
+        margin:0;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        height: 20vh;
+    }
+</style>
+
+<canvas></canvas>
+
+<script>
+const canvas = document.querySelector('canvas');
+const c = canvas.getContext('2d');
+
+canvas.width = 600;
+canvas.height = 576;
+
+let gravity = 1.5;
+
+class Player {
+  constructor() {
+    this.position = {
+      x: 100,
+      y: canvas.height - 100
+    };
+    this.velocity = {
+      x: 0,
+      y: 0
+    };
+    this.width = 30;
+    this.height = 30;
+
+    this.color = 'red';
+  }
+
+  draw() {
+    c.fillStyle = this.color;
+    c.fillRect(
+      this.position.x,
+      this.position.y,
+      this.width,
+      this.height
+    );
+  }
+
+  update() {
+    this.position.y += this.velocity.y;
+    this.position.x += this.velocity.x;
+
+    // Boundary checks
+    if (this.position.y + this.height >= canvas.height) {
+      this.position.y = canvas.height - this.height;
+      this.velocity.y = 0;
+    } else if (this.position.y <= 0) {
+      this.position.y = 0;
+      this.velocity.y = 0;
+    }
+
+    if (this.position.x + this.width >= canvas.width) {
+      this.position.x = canvas.width - this.width;
+      this.velocity.x = 0;
+    } else if (this.position.x <= 0) {
+      this.position.x = 0;
+      this.velocity.x = 0;
+    }
+
+    this.draw();
+  }
+}
+
+let player = new Player();
+
+function animate() {
+  requestAnimationFrame(animate);
+  c.clearRect(0, 0, canvas.width, canvas.height);
+  player.update();
+}
+
+animate();
+
+function handleKeyDown(event) {
+  const speed = 10;
+
+  if (event.key === 'ArrowUp') {
+    player.velocity.y = -speed;
+  } else if (event.key === 'ArrowDown') {
+    player.velocity.y = speed;
+  } else if (event.key === 'ArrowLeft') {
+    player.velocity.x = -speed;
+  } else if (event.key === 'ArrowRight') {
+    player.velocity.x = speed;
+  }
+}
+
+function handleKeyUp(event) {
+  if (
+    event.key === 'ArrowUp' ||
+    event.key === 'ArrowDown' ||
+    event.key === 'ArrowLeft' ||
+    event.key === 'ArrowRight'
+  ) {
+    player.velocity.x = 0;
+    player.velocity.y = 0;
+  }
+}
+
+document.addEventListener('keydown', handleKeyDown);
+document.addEventListener('keyup', handleKeyUp);
+</script>
 
 
-
-  
-
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
-
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
-
- 
-  
-
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/samayaCSA/2023/06/15/mario2.html">
-    Mario Animation
-    </a>
-</h3><p class="post-meta-description">Mario</p><p class="post-meta">Jun 15, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/samayaCSA/2023/06/14/CSUSM-Extra-Credit.html">
-    Csusm Extra Credit
-    </a>
-</h3><p class="post-meta">Jun 14, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/samayaCSA/2023/06/14/Letter-of-Rec.html">
-    Letter Of Rec
-    </a>
-</h3><p class="post-meta">Jun 14, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/samayaCSA/ap/2023/06/14/recursion.html">
-    Recursion Lesson
-    </a>
-</h3><p class="post-meta-description">Recursion</p><p class="post-meta">Jun 14, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/samayaCSA/2023/06/14/Test-Corrections.html">
-     Test Corrections
-    </a>
-</h3><p class="post-meta">Jun 14, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/samayaCSA/2023/06/14/MC.html">
-     Mc
-    </a>
-</h3><p class="post-meta">Jun 14, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/samayaCSA/2023/06/13/mario.html">
-    Title
-    </a>
-</h3><p class="post-meta">Jun 13, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/samayaCSA/2023/06/06/reflection.html">
-    Reflection
-    </a>
-</h3><p class="post-meta">Jun 6, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/samayaCSA/cb/2023/04/26/grp2.html">
-    Arrays and 2D Arrays Hacks (Macro Monkeys)
-    </a>
-</h3><p class="post-meta">Apr 26, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/samayaCSA/tri3/2023/04/15/2020Frq.html">
-    2020 FRQ
-    </a>
-</h3><p class="post-meta-description">frq</p><p class="post-meta">Apr 15, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/samayaCSA/tri3/2023/04/05/BigO.html">
-    Big O Notation
-    </a>
-</h3><p class="post-meta-description">hacks</p><p class="post-meta">Apr 5, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/samayaCSA/tri3/2023/04/04/sorts.html">
-    Sorts Part 2
-    </a>
-</h3><p class="post-meta-description">hacks</p><p class="post-meta">Apr 4, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/samayaCSA/tri3/2023/03/26/stack-hack.html">
-    Stack Hack
-    </a>
-</h3><p class="post-meta-description">hacks</p><p class="post-meta">Mar 26, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/samayaCSA/tri3/2023/03/26/classes.html">
-    Classes and Objects
-    </a>
-</h3><p class="post-meta-description">notes</p><p class="post-meta">Mar 26, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/samayaCSA/tri3/2023/03/25/checkpoint2.html">
-    Queues and Stacks
-    </a>
-</h3><p class="post-meta-description">hacks</p><p class="post-meta">Mar 25, 2023</p>
-</li></ul>
-
-    
-      <div class="pager">
-        <ul class="pagination">
-          <li><div class="pager-edge">•</div></li>
-          <li><div class="current-page">1</div></li>
-          <li><a href="/samayaCSA/page2/" class="next-page">2</a></li>
-        </ul>
-      </div></div>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/samayaCSA/"></data>
