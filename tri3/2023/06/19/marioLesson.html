@@ -143,18 +143,15 @@ window.onload = wrap_img;
 <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
     <span class="p">#</span><span class="nn">canvas</span> <span class="p">{</span>
         <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-        <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-        <span class="k">height</span><span class="p">:</span> <span class="mi">20</span><span class="kt">vh</span><span class="p">;</span>
+        <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">black</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">canvas</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;canvas&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">canvas</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
     <span class="kr">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;canvas&#39;</span><span class="p">);</span>
     <span class="kr">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s1">&#39;2d&#39;</span><span class="p">);</span>
-    <span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="nx">innerWidth</span><span class="p">;</span>
-    <span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="nx">innerHeight</span><span class="p">;</span>
+    <span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="mf">900</span><span class="p">;</span>
+    <span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="mf">300</span><span class="p">;</span>
 
     <span class="kr">const</span> <span class="nx">gravity</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">;</span>
 
@@ -271,18 +268,15 @@ window.onload = wrap_img;
 <style>
     #canvas {
         margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 20vh;
+        border: 1px solid black;
     }
 </style>
 <canvas id="canvas"></canvas>
 <script>
     const canvas = document.getElementById('canvas');
     const c = canvas.getContext('2d');
-    canvas.width = innerWidth;
-    canvas.height = innerHeight;
+    canvas.width = 900;
+    canvas.height = 300;
 
     const gravity = 1.5;
 
@@ -412,7 +406,7 @@ window.onload = wrap_img;
 <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
     <span class="kr">const</span> <span class="nx">canvas1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;canvas1&#39;</span><span class="p">);</span>
     <span class="kr">const</span> <span class="nx">c1</span> <span class="o">=</span> <span class="nx">canvas1</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s1">&#39;2d&#39;</span><span class="p">);</span>
-    <span class="nx">canvas1</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="mf">700</span><span class="p">;</span>
+    <span class="nx">canvas1</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="mf">900</span><span class="p">;</span>
     <span class="nx">canvas1</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="mf">300</span><span class="p">;</span>
 
     <span class="kr">const</span> <span class="nx">gravity1</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">;</span>
@@ -565,7 +559,7 @@ window.onload = wrap_img;
 <script>
     const canvas1 = document.getElementById('canvas1');
     const c1 = canvas1.getContext('2d');
-    canvas1.width = 700;
+    canvas1.width = 900;
     canvas1.height = 300;
 
     const gravity1 = 1.5;
