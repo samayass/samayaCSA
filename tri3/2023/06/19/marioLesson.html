@@ -443,22 +443,20 @@ window.onload = wrap_img;
     <span class="p">}</span>
 
     <span class="kr">class</span> <span class="nx">Platform</span> <span class="p">{</span>
-    <span class="nx">constructor</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">position</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="nx">x</span><span class="o">:</span> <span class="mf">0</span><span class="p">,</span> 
-            <span class="nx">y</span><span class="o">:</span> <span class="mf">200</span>
+        <span class="nx">constructor</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">position</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="nx">x</span><span class="o">:</span> <span class="mf">200</span><span class="p">,</span>
+                <span class="nx">y</span><span class="o">:</span> <span class="mf">100</span>
+            <span class="p">};</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="mf">200</span><span class="p">;</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="mf">20</span><span class="p">;</span>
         <span class="p">}</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">image</span> <span class="o">=</span> <span class="nx">image</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="mf">540</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="mf">160</span>
-    <span class="p">}</span>
-    <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">c</span><span class="p">.</span><span class="nx">drawImage</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">image</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
 
-<span class="kd">let</span> <span class="nx">image</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Image</span><span class="p">();</span>
-<span class="nx">image</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">&#39;images/platform.png&#39;</span><span class="p">;</span>
+        <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nx">c1</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span><span class="p">;</span>
+            <span class="nx">c1</span><span class="p">.</span><span class="nx">fillRect</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">y</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">height</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
 
     <span class="kr">const</span> <span class="nx">player1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Player1</span><span class="p">();</span>
     <span class="kr">const</span> <span class="nx">platform</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Platform</span><span class="p">();</span>
@@ -598,22 +596,20 @@ window.onload = wrap_img;
     }
 
     class Platform {
-    constructor() {
-        this.position = {
-            x: 0, 
-            y: 200
+        constructor() {
+            this.position = {
+                x: 200,
+                y: 100
+            };
+            this.width = 200;
+            this.height = 20;
         }
-        this.image = image;
-        this.width = 540
-        this.height = 160
-    }
-    draw() {
-        c.drawImage(this.image, this.position.x, this.position.y);
-    }
-}
 
-let image = new Image();
-image.src = 'images/platform.png';
+        draw() {
+            c1.fillStyle = 'blue';
+            c1.fillRect(this.position.x, this.position.y, this.width, this.height);
+        }
+    }
 
     const player1 = new Player1();
     const platform = new Platform();
