@@ -740,7 +740,7 @@ window.onload = wrap_img;
         <span class="p">}</span>
         
         <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
-            <span class="nx">c2</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s1">&#39;green&#39;</span><span class="p">;</span>
+            <span class="nx">c2</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span><span class="p">;</span>
             <span class="nx">c2</span><span class="p">.</span><span class="nx">fillRect</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">y</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">height</span><span class="p">);</span>
         <span class="p">}</span>
         
@@ -757,25 +757,25 @@ window.onload = wrap_img;
     <span class="p">}</span>
     
     <span class="kr">class</span> <span class="nx">BlockObject</span> <span class="p">{</span>
-        <span class="nx">constructor</span><span class="p">(</span><span class="nx">image</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">constructor</span><span class="p">(</span><span class="nx">image1</span><span class="p">)</span> <span class="p">{</span>
             <span class="k">this</span><span class="p">.</span><span class="nx">position</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="nx">x</span><span class="o">:</span> <span class="mf">0</span><span class="p">,</span>
-                <span class="nx">y</span><span class="o">:</span> <span class="mf">200</span>
+                <span class="nx">x</span><span class="o">:</span> <span class="mf">200</span><span class="p">,</span>
+                <span class="nx">y</span><span class="o">:</span> <span class="mf">100</span>
             <span class="p">};</span>
-            <span class="k">this</span><span class="p">.</span><span class="nx">image</span> <span class="o">=</span> <span class="nx">image</span><span class="p">;</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">image1</span> <span class="o">=</span> <span class="nx">image1</span><span class="p">;</span>
             <span class="k">this</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="mf">540</span><span class="p">;</span>
             <span class="k">this</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="mf">160</span><span class="p">;</span>
         <span class="p">}</span>
         
         <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
-            <span class="nx">c2</span><span class="p">.</span><span class="nx">drawImage</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">image</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+            <span class="nx">c2</span><span class="p">.</span><span class="nx">drawImage</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">image1</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="kd">let</span> <span class="nx">image</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Image</span><span class="p">();</span>
-    <span class="nx">image</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">image1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Image</span><span class="p">();</span>
+    <span class="nx">image1</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
         <span class="kr">const</span> <span class="nx">player2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Player2</span><span class="p">();</span>
-        <span class="kr">const</span> <span class="nx">blockObject</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">BlockObject</span><span class="p">(</span><span class="nx">image</span><span class="p">);</span>
+        <span class="kr">const</span> <span class="nx">blockObject</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">BlockObject</span><span class="p">(</span><span class="nx">image1</span><span class="p">);</span>
         <span class="kr">const</span> <span class="nx">keys2</span> <span class="o">=</span> <span class="p">{</span>
             <span class="nx">right</span><span class="o">:</span> <span class="p">{</span>
                 <span class="nx">pressed</span><span class="o">:</span> <span class="kc">false</span>
@@ -844,7 +844,7 @@ window.onload = wrap_img;
         <span class="p">});</span>
     <span class="p">};</span>
 
-    <span class="nx">image</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">&#39;https://samayass.github.io/samayaCSA/images/box.png&#39;</span><span class="p">;</span>
+    <span class="nx">image1</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">&#39;https://samayass.github.io/samayaCSA/images/box.png&#39;</span><span class="p">;</span>
 
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
@@ -906,23 +906,23 @@ window.onload = wrap_img;
     }
     
     class BlockObject {
-        constructor(image) {
+        constructor(image1) {
             this.position = {
                 x: 0,
                 y: 200
             };
-            this.image = image;
+            this.image1 = image1;
             this.width = 540;
             this.height = 160;
         }
         
         draw() {
-            c2.drawImage(this.image, this.position.x, this.position.y);
+            c2.drawImage(this.image1, this.position.x, this.position.y);
         }
     }
 
-    let image = new Image();
-    image.onload = function() {
+    let image1 = new Image();
+    image1.onload = function() {
         const player2 = new Player2();
         const blockObject = new BlockObject(image);
         const keys2 = {
@@ -993,7 +993,7 @@ window.onload = wrap_img;
         });
     };
 
-    image.src = 'https://samayass.github.io/samayaCSA/images/box.png';
+    image1.src = 'https://samayass.github.io/samayaCSA/images/box.png';
 
 </script>
 
