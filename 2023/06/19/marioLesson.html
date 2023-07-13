@@ -889,7 +889,7 @@ window.onload = wrap_img;
         }
         
         draw() {
-            c2.fillStyle = 'green';
+            c2.fillStyle = 'red';
             c2.fillRect(this.position.x, this.position.y, this.width, this.height);
         }
         
@@ -908,8 +908,8 @@ window.onload = wrap_img;
     class BlockObject {
         constructor(image1) {
             this.position = {
-                x: 0,
-                y: 200
+                x: 200,
+                y: 100
             };
             this.image1 = image1;
             this.width = 540;
@@ -924,7 +924,7 @@ window.onload = wrap_img;
     let image1 = new Image();
     image1.onload = function() {
         const player2 = new Player2();
-        const blockObject = new BlockObject(image);
+        const blockObject = new BlockObject(image1);
         const keys2 = {
             right: {
                 pressed: false
