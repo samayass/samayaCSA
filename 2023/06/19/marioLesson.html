@@ -147,8 +147,8 @@ window.onload = wrap_img;
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">canvas</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;canvas&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">canvas</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-    <span class="kr">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;canvas&#39;</span><span class="p">);</span>
-    <span class="kr">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s1">&#39;2d&#39;</span><span class="p">);</span>
+    <span class="kd">let</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;canvas&#39;</span><span class="p">);</span>
+    <span class="kd">let</span> <span class="nx">c</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s1">&#39;2d&#39;</span><span class="p">);</span>
     <span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="mf">770</span><span class="p">;</span>
     <span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="mf">300</span><span class="p">;</span>
 
@@ -185,7 +185,7 @@ window.onload = wrap_img;
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="kr">const</span> <span class="nx">player</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Player</span><span class="p">();</span>
+    <span class="nx">player</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Player</span><span class="p">();</span>
     <span class="kr">const</span> <span class="nx">keys</span> <span class="o">=</span> <span class="p">{</span>
         <span class="nx">right</span><span class="o">:</span> <span class="p">{</span>
             <span class="nx">pressed</span><span class="o">:</span> <span class="kc">false</span>
@@ -235,7 +235,7 @@ window.onload = wrap_img;
         <span class="k">switch</span> <span class="p">(</span><span class="nx">keyCode</span><span class="p">)</span> <span class="p">{</span>
             <span class="k">case</span> <span class="mf">65</span><span class="o">:</span>
                 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;left&#39;</span><span class="p">);</span>
-                <span class="nx">keys</span><span class="p">.</span><span class="nx">left</span><span class="p">.</span><span class="nx">pressed</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+                <span class="nx">keys</span><span class="p">.</span><span class="nx">left</span><span class="p">.</span><span class="nx">pressed</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span><span class="nx">w</span>
                 <span class="k">break</span><span class="p">;</span>
             <span class="k">case</span> <span class="mf">83</span><span class="o">:</span>
                 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;down&#39;</span><span class="p">);</span>
@@ -272,8 +272,8 @@ window.onload = wrap_img;
 </style>
 <canvas id="canvas"></canvas>
 <script>
-    const canvas = document.getElementById('canvas');
-    const c = canvas.getContext('2d');
+    let canvas = document.getElementById('canvas');
+    let c = canvas.getContext('2d');
     canvas.width = 770;
     canvas.height = 300;
 
@@ -310,7 +310,7 @@ window.onload = wrap_img;
         }
     }
 
-    const player = new Player();
+    player = new Player();
     const keys = {
         right: {
             pressed: false
@@ -360,7 +360,7 @@ window.onload = wrap_img;
         switch (keyCode) {
             case 65:
                 console.log('left');
-                keys.left.pressed = false;
+                keys.left.pressed = false;w
                 break;
             case 83:
                 console.log('down');
